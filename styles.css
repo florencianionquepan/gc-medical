@@ -1,25 +1,12 @@
 /* Media query para pantallas grandes */
-@media (min-width: 1400px) {
+@media (min-height: 700px) {
     body {
-        margin-top: 180px !important; /* Establece un margen superior de 200px en pantallas grandes */
+        margin-top: 150px !important; /* Establece un margen superior de 200px en pantallas grandes */
     }
 }
 
 #image-container img{
     max-height: 350px;
-}
-
-#image-container{
-    position: relative;
-    overflow: hidden;
-    max-width: 100%;
-}
-
-.overlay-text {
-    position: absolute; /* Establece la posición absoluta para el texto */
-    bottom: 10%; /* Coloca el texto en la parte inferior */
-    right: 38%; /* Coloca el texto en la parte derecha */
-    padding: 10px; /* Espaciado interno del cuadro de texto */
 }
 
 #info img{
