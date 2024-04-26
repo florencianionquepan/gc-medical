@@ -5,6 +5,8 @@ const menuItems=[
   {id:2,title:'PRODUCTOS',link:"/",subItems: [
     { id: 21, title: 'Linea 1', link: '/productos/linea1' },
     { id: 22, title: 'Linea 2', link: '/productos/linea2' },
+    { id: 23, title: 'Linea 3', link: '/productos/linea3' },
+    { id: 24, title: 'Linea 4', link: '/productos/linea4' },
     ]
   },
   {id:3,title:'CONTACTO',link:"/"},
@@ -43,11 +45,24 @@ export const MIHeader = () => {
             {menuItems.map(i=>(
               <li className="nav-item"
                   key={i.id}>
-                  <a href={i.link} 
-                      className={`nav-link link-dark px-2${i.link === currentPage ? ' active' : ''}`} 
-                      onClick={() => handleClick(i.link)}>
-                        {i.title}
-                  </a>
+                    {i.subItems?(
+                      <div className='nav-item px-2 dropdown'>
+                        <span className="nav-link link-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">{i.title}</span>
+                        <ul className="dropdown-menu">
+                          {i.subItems.map(subItem => (
+                            <li key={subItem.id}>
+                              <a href={subItem.link} className="dropdown-item">{subItem.title}</a>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    ):(
+                      <a href={i.link} 
+                        className={`nav-link link-dark px-2${i.link === currentPage ? ' active' : ''}`} 
+                        onClick={() => handleClick(i.link)}>
+                          {i.title}
+                      </a>
+                    )}
                 </li>
             ))}
           </ul>
