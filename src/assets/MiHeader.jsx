@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { MiNavbar } from './MiNavbar';
 
 
 
@@ -17,7 +17,7 @@ export const MiHeader = () => {
         </form>
       </div>
     </header>
-    
+    <MiNavbar/>
   </div>
   )
 }
