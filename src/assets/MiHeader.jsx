@@ -6,7 +6,7 @@ export const MiHeader = () => {
 
 
   return (
-  <div className='sticky-top'>
+  <div className='sticky-top bg-white'>
     <header className="py-3 border-bottom">
       <div className="d-flex flex-wrap justify-content-center">
         <a href="/" className="d-flex align-items-center ms-4 mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">

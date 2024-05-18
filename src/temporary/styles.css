@@ -1,0 +1,14 @@
+/* Media query para pantallas grandes */
+@media (min-height: 700px) {
+    body {
+        margin-top: 150px !important; /* Establece un margen superior de 200px en pantallas grandes */
+    }
+}
+
+#image-container img{
+    max-height: 350px;
+}
+
+#info img{
+    width: 30px;
+}
