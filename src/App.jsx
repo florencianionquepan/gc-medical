@@ -1,6 +1,3 @@
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.min.js";
-
 import {HomePage} from './home/HomePage';
 import {ContactPage} from './contact/ContactPage';
 import {AboutPage} from './about/AboutPage';
