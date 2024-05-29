@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 export const NavDropdown = ({item}) => {
   return (
     <>
-    <div className='nav-item px-2 dropdown'>
+    <div className='nav-item px-md-2 dropdown'>
         <span className="nav-link" type="button" data-bs-toggle="dropdown" aria-expanded="false">
             {item.title}
         </span>
