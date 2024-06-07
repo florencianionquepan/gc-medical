@@ -29,7 +29,7 @@ export const MiNavbar = () => {
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <div className="collapse navbar-collapse justify-content-end me-md-5" id="navbarNav">
           <ul className="navbar-nav">
             {menuItems.map(i=>(
               <li className="nav-item"

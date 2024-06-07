@@ -4,7 +4,7 @@ export const NavItem = ({item}) => {
   return (
     <>
     <NavLink to={item.link} 
-            className={ ({isActive}) => `nav-link ${ isActive? 'active':''}`}>
+            className={ ({isActive}) => `fw-bolder nav-link ${ isActive? 'active':''}`}>
             {item.title}
     </NavLink>
     </>
