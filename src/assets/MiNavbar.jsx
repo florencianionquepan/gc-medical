@@ -5,10 +5,14 @@ import { NavDropdown } from "./NavDropdown";
 const menuItems=[
   {id:1,title:'HOME',link:"/"},
   {id:2,title:'PRODUCTOS',link:"/",subItems: [
-    { id: 21, title: 'Linea 1', link: '/productos/linea1' },
-    { id: 22, title: 'Linea 2', link: '/productos/linea2' },
-    { id: 23, title: 'Linea 3', link: '/productos/linea3' },
-    { id: 24, title: 'Linea 4', link: '/productos/linea4' },
+    { id: 21, title: 'Cardiologia', link: '/productos/cardiologia' },
+    { id: 22, title: 'Cirugia', link: '/productos/cirugia' },
+    { id: 23, title: 'Diabetes', link: '/productos/diabetes' },
+    { id: 24, title: 'Gastroenterología', link: '/productos/gastroenterologia' },
+    { id: 25, title: 'Neurología', link: '/productos/neurologia' },
+    { id: 26, title: 'Oncología', link: '/productos/oncologia' },
+    { id: 27, title: 'Tratamiento heridas', link: '/productos/heridas' },
+    { id: 28, title: 'Urología', link: '/productos/urologia' },
     ]
   },
   {id:3,title:'CONTACTO',link:"/contacto"},
