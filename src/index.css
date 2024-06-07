@@ -1,4 +1,12 @@
 .nav-link.active {
     color: #1966CC !important;
-  }
-  
+}
+
+
+.btn-contact:hover{
+  background-color: #5292e6 !important;
+}
+
+.btn-custom{
+  background-color: white;
+}
