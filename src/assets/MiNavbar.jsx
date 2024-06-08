@@ -1,4 +1,3 @@
-import { NavLink } from "react-router-dom";
 import { NavItem } from "./NavItem";
 import { NavDropdown } from "./NavDropdown";
 
@@ -27,7 +26,7 @@ export const MiNavbar = () => {
     <nav className="navbar navbar-expand-md py-2 bg-light border-bottom sticky-top'">
       <div className="container-fluid">
         <a href="/" className="d-flex align-items-center ms-4 mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
-          <img src="img/logo.png" alt="logo"/>
+          <img src="/img/logo.png" alt="logo"/>
         </a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

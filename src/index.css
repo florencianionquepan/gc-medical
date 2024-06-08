@@ -10,3 +10,7 @@
 .btn-custom{
   background-color: white;
 }
+
+.link-custom:hover, :active{
+  color: #1966CC !important;
+}
