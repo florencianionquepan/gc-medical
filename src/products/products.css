@@ -12,3 +12,7 @@
     max-height: 300px; /* Establece el alto máximo */
     object-fit: contain; /* Ajusta la imagen respetando la proporción */
 }
+
+.img-detail{
+    max-width: 90%;
+}
