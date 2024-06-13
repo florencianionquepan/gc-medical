@@ -11,7 +11,7 @@ export const ProductPage = () => {
     useEffect(() => {
       const products = getProducts();
       setProducts(products);
-      console.log(products);
+      //console.log(products);
     }, []);
 
 
