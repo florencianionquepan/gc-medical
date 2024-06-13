@@ -23,19 +23,19 @@ const lineas2=[
 ];
 
 const iconos=[
-    {id:1, icono:'bi bi-instagram', link:'https://www.instagram.com/gcmedicalbb/?igsh=aTNvd2JkdXJ1N3Aw'},
-    {id:2, icono:'bi bi-facebook', link:'#'},
-    {id:3, icono:'bi bi-linkedin', link:'#'},
-    {id:4, icono:'bi bi-whatsapp', link:'https://wa.me/+542914372900'}
+    {id:11, icono:'bi bi-instagram', link:'https://www.instagram.com/gcmedicalbb/?igsh=aTNvd2JkdXJ1N3Aw'},
+    {id:12, icono:'bi bi-facebook', link:'#'},
+    {id:13, icono:'bi bi-linkedin', link:'#'},
+    {id:14, icono:'bi bi-whatsapp', link:'https://wa.me/+542914372900'}
 ];
 
 export const MiFooter = () => {
   return (
     <>
     <div className="container-fluid">
-        <footer className="row pt-5 mt-5 border-top align-items-center justify-content-center">
-            <div className="col-12 mb-3 col-md-5 col-lg-3 mx-auto">
-                <a href="/" className="text-dark text-decoration-none d-flex justify-content-center">
+        <footer className="row pt-5 mt-5 border-top align-items-center justify-content-center justify-content-md-between">
+            <div className="col-12 mb-3 col-md-5 col-lg-3">
+                <a href="/" className="text-dark text-decoration-none d-flex justify-content-center justify-content-md-start">
                     <img src="/img/logo.png" alt="logo"/>
                 </a>
             </div>
