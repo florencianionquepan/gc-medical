@@ -1,10 +1,16 @@
+/* este es el azul que queda para el menu active */
 .nav-link.active {
-    color: #1966CC !important;
+    color: #055C8D !important;
 }
+
+/* este es el azul mas claro
+#4C80C5 
+este el gris: #9DB9DF
+este el naranja: #EA7200*/
 
 
 .btn-contact:hover{
-  background-color: #5292e6 !important;
+  background-color: #4C80C5 !important;
 }
 
 .btn-custom{
