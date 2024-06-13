@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export const ProductCard = ({product}) => {
 
   const imagePath = '/img/products/'.concat(product.image);
@@ -8,7 +10,9 @@ export const ProductCard = ({product}) => {
         <div className="card-body">
             <h5 className="card-title">{product.name}</h5>
             <p className="card-text">Linea: {product.line} - Proveedor: {product.provider} </p>
-            <a href="#" className="btn btn-primary">Ver detalles</a>
+            <Link to={`/productos/${product.id}`} className="btn btn-primary">
+              Ver detalles
+            </Link>
         </div>
     </div>
   )
