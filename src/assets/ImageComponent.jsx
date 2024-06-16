@@ -11,7 +11,7 @@ export const ImageComponent = ({hash, claseHash, path, clase, imageAlt}) => {
     const img= new Image()
     img.onload = () =>{
       setImageLoaded(true);
-      setTimeout(() => setHideBlurhash(true), 800); 
+      setTimeout(() => setHideBlurhash(true), 1000); 
     }
     img.src= path
   }, [path])
