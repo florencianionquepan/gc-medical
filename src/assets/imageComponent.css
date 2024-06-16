@@ -1,0 +1,9 @@
+.img-blur{
+    opacity: 1;
+    transition: opacity 200ms ease-out;
+}
+
+.no-blurhash{
+    opacity: 0;
+    transition: opacity 200ms ease-in-out;
+}
