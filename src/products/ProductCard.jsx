@@ -9,7 +9,7 @@ export const ProductCard = ({product}) => {
         <img src={imagePath} className="card-img-top img-fluid" alt={product.name}/>
         <div className="card-body">
             <h5 className="card-title">{product.name}</h5>
-            <p className="card-text">Linea: {product.line} - Proveedor: {product.provider} </p>
+            <p className="card-text"> Proveedor: {product.provider} </p>
             <Link to={`/productos/${product.id}`} className="btn btn-primary">
               Ver detalles
             </Link>

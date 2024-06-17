@@ -17,6 +17,15 @@ este el naranja: #EA7200*/
   background-color: white;
 }
 
-.link-custom:hover, :active{
+.link-custom:hover{
   color: #1966CC !important;
+}
+
+.link-custom:active{
+  color: #1966CC !important;
+}
+
+/* clases para fondos */
+.bg-celeste{
+  background-color: #4C80C5;
 }

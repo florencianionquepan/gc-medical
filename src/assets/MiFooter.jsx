@@ -1,25 +1,25 @@
 
 const generalItems=[
-    {id:1, title: 'Productos Médicos', link:'#'},
-    {id:2, title: 'Contacto', link:'#'},
-    {id:3, title: 'Sobre la empresa', link:'#'},
-    {id:4, title: 'Zonas', link:'#'},
-    {id:5, title: 'Habilitaciones', link:'#'},
-    {id:6, title: 'Proveedores', link:'#'}
+    {id:1, title: 'Productos Médicos', link:'/productos'},
+    {id:2, title: 'Contacto', link:'/contacto'},
+    {id:3, title: 'Sobre la empresa', link:'/nosotros'},
+    {id:4, title: 'Zonas', link:'/contacto'},
+    {id:5, title: 'Habilitaciones', link:'/nosotros'},
+    {id:6, title: 'Proveedores', link:'/nosotros'}
 ];
 
 const lineas1=[
-    { id: 21, title: 'Cardiologia', link: '/productos/cardiologia' },
-    { id: 22, title: 'Cirugia', link: '/productos/cirugia' },
-    { id: 23, title: 'Diabetes', link: '/productos/diabetes' },
-    { id: 24, title: 'Gastroenterología', link: '/productos/gastroenterologia' }
+    { id: 21, title: 'Cardiologia', link: '/productos/linea/cardiologia' },
+    { id: 22, title: 'Cirugia', link: '/productos/linea/cirugia' },
+    { id: 23, title: 'Diabetes', link: '/productos/linea/diabetes' },
+    { id: 24, title: 'Gastroenterología', link: '/productos/linea/gastroenterologia' }
 ];
 
 const lineas2=[
-    { id: 25, title: 'Neurología', link: '/productos/neurologia' },
-    { id: 26, title: 'Oncología', link: '/productos/oncologia' },
-    { id: 27, title: 'Tratamiento de heridas', link: '/productos/heridas' },
-    { id: 28, title: 'Urología', link: '/productos/urologia' }
+    { id: 25, title: 'Neurología', link: '/productos/linea/neurologia' },
+    { id: 26, title: 'Oncología', link: '/productos/linea/oncologia' },
+    { id: 27, title: 'Tratamiento de heridas', link: '/productos/linea/heridas' },
+    { id: 28, title: 'Urología', link: '/productos/linea/urologia' }
 ];
 
 const iconos=[
