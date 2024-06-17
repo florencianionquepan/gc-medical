@@ -1,5 +1,5 @@
 
-export const TitleComponent = ({title}) => {
+export const TitleLineComponent = ({title}) => {
 
   const titleModified = title === "heridas" ? "Tratamiento de heridas" : title.charAt(0).toUpperCase() + title.slice(1);
 
