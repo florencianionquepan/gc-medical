@@ -1,6 +1,7 @@
 import { useMemo } from 'react'
 import { useNavigate, useParams } from 'react-router-dom';
 import {getProductById} from './helpers/getProductById';
+import { TitleProductComponent } from './TitleProductComponent';
 
 export const ProductDetail = () => {
 
@@ -21,6 +22,9 @@ export const ProductDetail = () => {
   return (
     <div className='container-md'>
         <div className='row m-5'>
+          <TitleProductComponent title={product.name}/>
+        </div>
+        <div className='row m-5'>
           <div className='col-6'>
             <img
               src={imagePath}
@@ -30,7 +34,7 @@ export const ProductDetail = () => {
           </div>
           <div className='col-4'>
             <h5>
-              {product.name}
+              {product.provider}
             </h5>
             {splitDescription(product.description)}
           
