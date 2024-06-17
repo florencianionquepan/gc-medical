@@ -1,3 +1,16 @@
+body{
+  font-family: 'scope-one';
+}
+
+.font-title{
+  font-family: 'rozha-one';
+}
+
+.font-inter{
+  font-family: 'inter';
+}
+
+
 /* este es el azul que queda para el menu active */
 .nav-link.active {
     color: #055C8D !important;
