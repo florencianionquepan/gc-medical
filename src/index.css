@@ -19,10 +19,12 @@ este el naranja: #EA7200*/
 
 .link-custom:hover{
   color: #1966CC !important;
+  background-color: transparent !important;
 }
 
 .link-custom:active{
   color: #1966CC !important;
+  background-color: transparent !important;
 }
 
 /* clases para fondos */

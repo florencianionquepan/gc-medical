@@ -33,7 +33,7 @@ export const MiFooter = () => {
   return (
     <>
     <div className="container-fluid">
-        <footer className="row pt-5 mt-5 border-top align-items-center justify-content-center justify-content-md-between">
+        <footer className="row pt-5 mt-5 bg-light border-top align-items-center justify-content-center justify-content-md-between">
             <div className="col-12 mb-3 col-md-5 col-lg-3">
                 <a href="/" className="text-dark text-decoration-none d-flex justify-content-center justify-content-md-start">
                     <img src="/img/logo.png" alt="logo"/>
