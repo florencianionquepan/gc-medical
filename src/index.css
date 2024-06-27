@@ -1,14 +1,5 @@
-body{
-  font-family: 'scope-one';
-}
+@import url(./fonts.css);
 
-.font-title{
-  font-family: 'rozha-one';
-}
-
-.font-inter{
-  font-family: 'inter';
-}
 
 
 /* este es el azul que queda para el menu active */
@@ -43,4 +34,12 @@ este el naranja: #EA7200*/
 /* clases para fondos */
 .bg-celeste{
   background-color: #4C80C5;
+}
+
+.bg-azul{
+  background-color: #055C8D;
+}
+
+.bg-gris{
+  background-color: #9DB9DF;
 }
