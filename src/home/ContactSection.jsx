@@ -1,13 +1,16 @@
-import React from 'react'
+import { ComunidadComponent } from "../assets/ComunidadComponent"
 
 export const ContactSection = () => {
   return (
     <>
-        <div className='p-5 m-5 border border-secondary rounded'>
-            <h2> Seccion contacto </h2>
-            <div className='row'>
-                <div className='col-12'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam sed delectus accusamus sit laudantium debitis nostrum. Fuga pariatur molestiae sit enim laudantium commodi labore quaerat cupiditate minus tempora, quo nisi.
+        <div className='p-3 m-5 border border-gris border-5 rounded rozha-one'>
+            <div className='row align-items-center'>
+                <div className='col-12 col-md-6 text-center my-3'>
+                  <h1 className="display-2"> Contacto </h1>
+                  <a className="btn btn-gris btn-lg">Ver mas</a>
+                </div>
+                <div className='col-12 col-md-6 display-6 my-3'>
+                  <ComunidadComponent/>
                 </div>
             </div>
         </div>
