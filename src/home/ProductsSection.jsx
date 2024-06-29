@@ -1,17 +1,28 @@
-import React from 'react'
+import { Link } from "react-router-dom"
 
 export const ProductsSection = () => {
   return (
-    <>
-        <div className='m-5 p-5 border border-secondary rounded'>
-            <h2> Nuestros Productos </h2>
-            <div className='row'>
-                <div className='col-12'>
-                Poner algunas cards con algunos de los productos podria ser, o si arriba dejamos ese carousel ir poniendo las lineas
-                que se manejan, poner algo de animacion
-                </div>
-            </div>
+    <div className='row align-items-center justify-content-center m-5 border border-gris border-5 rounded rozha-one'>
+      <div className='col-12 col-lg-6 display-6 bg-gris border-5 border-gris'>
+        <div className="row align-items-center mx-auto rounded bg-body mt-2">
+          <div className="col-6">
+            <img src={'/img/supplier/lexel.webp'} className="img-fluid" alt="lexel"/>
+          </div>
+          <div className="col-6">
+            <img src={'/img/supplier/promedon.webp'} className="img-fluid" alt="promedon"/>
+          </div>
         </div>
-    </>
+        <div className="row py-3">
+          <div className="col text-center">
+          <img src={'/img/supplier/medtronic.webp'} className="img-fluid w-50" alt="promedon"/>
+          </div>
+        </div>
+      </div>
+      <div className='col-12 col-lg-6 text-center my-3 rounded'>
+        <h1 className="display-2"> Productos </h1>
+        <Link className="btn btn-gris btn-lg" to='/productos' >Ver mas</Link>
+      </div>
+    
+    </div>
   )
 }
