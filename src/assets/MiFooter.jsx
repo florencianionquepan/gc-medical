@@ -1,3 +1,4 @@
+import { ComunidadComponent } from "./ComunidadComponent";
 
 const generalItems=[
     {id:1, title: 'Productos Médicos', link:'/productos'},
@@ -20,13 +21,6 @@ const lineas2=[
     { id: 26, title: 'Oncología', link: '/productos/linea/oncologia' },
     { id: 27, title: 'Tratamiento de heridas', link: '/productos/linea/heridas' },
     { id: 28, title: 'Urología', link: '/productos/linea/urologia' }
-];
-
-const iconos=[
-    {id:11, icono:'bi bi-instagram', link:'https://www.instagram.com/gcmedicalbb/?igsh=aTNvd2JkdXJ1N3Aw'},
-    {id:12, icono:'bi bi-facebook', link:'#'},
-    {id:13, icono:'bi bi-linkedin', link:'#'},
-    {id:14, icono:'bi bi-whatsapp', link:'https://wa.me/+542914372900'}
 ];
 
 export const MiFooter = () => {
@@ -71,14 +65,7 @@ export const MiFooter = () => {
             </div>
 
             <div className="col mb-3 col-md-4 col-lg-2">
-            <p className="text-center">Sumate a nuestra comunidad!</p>
-            <div className="d-flex justify-content-center">
-                {iconos.map(icono=>(
-                    <a key={icono.id} href={icono.link} className="btn btn-dark rounded-circle ms-1">
-                        <i className={icono.icono}></i>
-                    </a>
-                ))}
-            </div>
+            <ComunidadComponent/>
             </div>
         </footer>
     </div>
