@@ -1,7 +1,7 @@
-import React from 'react'
 import { ItemLocation } from './ItemLocation'
 import { ItemPhone } from './ItemPhone'
 import { ItemEmail } from './ItemEmail'
+import './contact.css';
 
 export const ContactPage = () => {
   return (
