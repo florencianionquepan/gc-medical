@@ -1,24 +1,14 @@
 @import url(./fonts.css);
 
-
-
-/* este es el azul que queda para el menu active */
-.nav-link.active {
-    color: #055C8D !important;
-}
-
 /* este es el azul mas claro
 #4C80C5 
 este el gris: #9DB9DF
 este el naranja: #EA7200*/
 
-
-.btn-contact:hover{
-  background-color: #4C80C5 !important;
-}
-
-.btn-custom{
-  background-color: white;
+/* clases de links */
+/* este es el azul que queda para el menu active */
+.nav-link.active {
+  color: #055C8D !important;
 }
 
 .link-custom:hover{
@@ -42,4 +32,33 @@ este el naranja: #EA7200*/
 
 .bg-gris{
   background-color: #9DB9DF;
+}
+
+/* clases para botones */
+
+.btn-celeste{
+  background-color: #4C80C5;
+  color: #000;
+}
+
+.btn-celeste:hover{
+  background-color: #055C8D;
+}
+
+.btn-gris{
+  background-color:  #9DB9DF;
+  color: #000;
+}
+
+.btn-gris:hover{
+  background-color: #4C80C5;
+}
+
+/* clases para border */
+.border-celeste{
+  border-color: #4C80C5 !important;
+}
+
+.border-gris{
+  border-color: #9DB9DF !important;
 }
