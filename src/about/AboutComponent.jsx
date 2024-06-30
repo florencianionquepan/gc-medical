@@ -3,13 +3,13 @@
 export const AboutComponent = ({title,text}) => {
 
     const splitText = (text) => {
-        // Dividir el texto usando expresión regular para coincidir con puntos
         const lines = text.split(/\./);
-        // Mapear cada línea a un párrafo
-        const paragraphs = lines.map((line, index) => (
+        const filteredLines = lines.filter(line => line.trim() !== '');
+        const paragraphs = filteredLines.map((line, index) => (
           <p key={index} className="mb-0">{line.trim()}.</p>
         ));
         return paragraphs;
+
       };
 
   return (
