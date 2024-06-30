@@ -1,6 +1,7 @@
 import { AppRouter } from "./routes/AppRouter";
 import { MiNavbar } from "./assets/MiNavbar";
 import { MiFooter } from './assets/MiFooter';
+import { WhatsAppIcon } from "./assets/WhatsAppIcon";
 
 
 export const App = () => {
@@ -8,6 +9,7 @@ export const App = () => {
     <>
     <MiNavbar/>
       <AppRouter/>
+      <WhatsAppIcon/>
     <MiFooter/>
     </>
   )
