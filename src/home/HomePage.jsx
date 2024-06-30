@@ -10,7 +10,7 @@ export const HomePage = () => {
     <>
     <BreakpointIndicator/>
     <div className='container-fluid'>
-      <Carousel/>
+      <CarouselLines/>
     </div>
     <div className='container-lg'>
       <AboutSection/>
