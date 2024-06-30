@@ -1,58 +1,53 @@
 import { useState } from 'react';
 import items from './../assets/helpers/itemsLines';
-import './home.css';
+import { Swiper,SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
 export const CarouselLines = () => {
-    const [currentIndex, setCurrentIndex] = useState(0);
-
-    const getVisibleItems = () => {
-        let visibleItems = [];
-        for (let i = 0; i < 3; i++) {
-          const index = (currentIndex + i) % items.length;
-          visibleItems.push(items[index]);
-        }
-        return visibleItems;
-    };
-
-    const prevSlide = () =>{
-        const newI = (currentIndex -1 + items.length) % items.length;
-        setCurrentIndex(newI);
-    }
-
-    const nextSlide = () =>{
-        const newI = (currentIndex+1) % items.length;;
-        setCurrentIndex(newI);
-    }
-
 
   return (
-    <>
-        <div id="carouselExampleDark" className="carousel carousel-dark slide" data-bs-ride="false">
-        <div className="carousel-inner">
-            <div className="carousel-item active">
-            <div className="row mx-5 justify-content-center">
-                {getVisibleItems().map((item, index) => (
-                <div className="col-3" key={index}>
-                    <div className="card categoria">
-                    <img src={item.imagePath} className='w-100' alt={item.linea} />
-                    <div className="card-body text-center">
-                        <h5 className="card-title">{item.linea}</h5>
-                    </div>
-                    </div>
-                </div>
-                ))}
-            </div>
-            </div>
-        </div>
-        <button className="carousel-control-prev" type="button" onClick={prevSlide}>
-            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span className="visually-hidden">Previous</span>
-        </button>
-        <button className="carousel-control-next" type="button" onClick={nextSlide}>
-            <span className="carousel-control-next-icon" aria-hidden="true"></span>
-            <span className="visually-hidden">Next</span>
-        </button>
-        </div>
-    </>
+    <div className='row justify-content-center mx-xl-5'>
+    <Swiper
+        modules={[Pagination, Navigation]}
+        breakpoints={{
+            320:{
+                slidesPerView:1
+            },
+            576:{
+                slidesPerView:2,
+                spaceBetween:15
+            },
+            768:{
+                slidesPerView:3,
+                spaceBetween:15
+            }
+        }}
+        loop={true}
+        pagination={{clickable:true}}
+        className='lg:max-w-[90%]'
+        spaceBetween={1}
+        slidesPerView={3}
+        onSwiper={(swiper) => console.log(swiper)}
+        >
+            {items.map((i)=>(
+                <SwiperSlide key={i.id}>
+                        <div className='col position-relative mb-3'>
+                            <div className='card border-0'>
+                                <img className='d-block w-75 rounded mx-auto' src={i.imagePath} alt={i.linea}/>
+                                <div className="card-body text-center">
+                                    <h5 className="card-title text-dark">{i.linea}</h5>
+                                </div>
+                            </div>
+                        </div>
+                        
+                </SwiperSlide>
+            ))}
+
+        </Swiper>
+    </div>
+    
   )
 }
