@@ -1,14 +1,16 @@
-import React from 'react'
+import { Link } from 'react-router-dom'
 
 export const AboutSection = () => {
   return (
-    <div className='m-5 p-5 border border-secondary rounded'>
-            <h2> Sobre nosotros...</h2>
-            <div className='row'>
-                <div className='col-12'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga enim illum sed temporibus, rerum hic repellendus molestias ratione quod ipsam praesentium eos sapiente fugiat eligendi autem veniam officia perspiciatis accusantium.
-                </div>
-            </div>
-        </div>
+    <div className='row align-items-center m-5 border border-gris border-5 rounded rozha-one bg-gris'>
+      <div className='col-12 col-md-7 text-center my-3 my-md-0'>
+        <img className='img-fluid rounded' src={'/img/nosotros.webp'}/>
+      </div>
+      <div className='col-12 col-md-5 display-6 text-center py-2 bg-body rounded'>
+        <h1 className="display-2 text-md-start mb-0"> Sobre </h1>
+        <h1 className="display-2 text-md-end mt-0"> nosotros </h1>
+        <Link className="btn btn-gris btn-lg" to='/nosotros'>Ver mas</Link>
+      </div>
+    </div>
   )
 }
