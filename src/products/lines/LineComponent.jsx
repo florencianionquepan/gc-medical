@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import './lines.css';
 
 
@@ -30,7 +30,7 @@ export const LineComponent = ({linea, imagePath, link, bg, orderText}) => {
                 <h2 className="mt-3"> {linea} </h2>
                 <p className="d-none d-md-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum soluta ab illum obcaecati possimus </p>
                 <div className="text-md-end me-md-5">
-                  <Link className="btn btn-secondary mb-3 mb-md-0" to={link}> Ver Productos </Link>
+                  <NavLink className="btn btn-secondary mb-3 mb-md-0" to={link}> Ver Productos </NavLink>
                 </div>
                 
             </div>

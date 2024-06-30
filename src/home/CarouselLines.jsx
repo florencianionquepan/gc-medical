@@ -30,7 +30,6 @@ export const CarouselLines = () => {
         className='lg:max-w-[90%]'
         spaceBetween={1}
         slidesPerView={3}
-        onSwiper={(swiper) => console.log(swiper)}
         >
             {items.map((i)=>(
                 <SwiperSlide key={i.id}>

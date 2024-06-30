@@ -2,7 +2,7 @@ import { NavItem } from "./NavItem";
 import { NavDropdown } from "./NavDropdown";
 
 const menuItems=[
-  {id:1,title:'HOME',link:"/"},
+  {id:1,title:'INICIO',link:"/"},
   {id:2,title:'PRODUCTOS',link:"/",subItems: [
     { id: 20, name:'all', title: 'Ver todas las lineas', link: '/productos' },
     { id: 21, name:'heridas', title: 'Tratamiento de heridas', link: '/productos/linea/heridas' },
