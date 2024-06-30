@@ -8,7 +8,7 @@ const iconos=[
 export const ComunidadComponent = () => {
   return (
     <>
-        <p className="text-center">Sumate a nuestra comunidad!</p>
+        <p className="text-center">¡Sumate a nuestra comunidad!</p>
         <div className="d-flex justify-content-center">
                 {iconos.map(icono=>(
                     <a key={icono.id} href={icono.link} className="btn btn-dark rounded-circle ms-1">

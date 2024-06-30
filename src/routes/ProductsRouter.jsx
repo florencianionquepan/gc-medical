@@ -1,7 +1,6 @@
 import { Route, Routes } from 'react-router-dom'
 import { ProductDetail } from '../products/ProductDetail'
 import { ProductLinePage } from '../products/lines/ProductLinePage'
-import { ProductPage } from '../products/ProductPage'
 import { LinesPage } from '../products/lines/LinesPage'
 
 
