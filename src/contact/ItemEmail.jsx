@@ -19,7 +19,7 @@ export const ItemEmail = () => {
             {iconos.map(ic=>(
                         <li key={ic.id}
                             className="list-group-item rozha-one">
-                            <a href={ic.link} className="btn btn-dark btn-sm rounded-circle ms-1">
+                            <a href={ic.link} className="btn btn-dark btn-sm rounded-circle ms-1" target="_blank" rel="noopener noreferrer">
                               <div className="mt-1">
                                   <i className={ic.icono}></i>
                               </div>

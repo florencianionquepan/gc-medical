@@ -1,7 +1,7 @@
 export const BigIcon = ({iconClass, link}) => {
   return (
     <>
-    <a href={link} target="_blank" className="text-decoration-none btn-contact 
+    <a href={link} target="_blank" rel="noopener noreferrer" className="text-decoration-none btn-contact 
                                   text-dark">
         <div className="border border-gris border-5 rounded-circle w-50 mx-auto
         d-flex justify-content-center align-items-center

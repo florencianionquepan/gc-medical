@@ -11,7 +11,7 @@ export const ComunidadComponent = () => {
         <p className="text-center">¡Sumate a nuestra comunidad!</p>
         <div className="d-flex justify-content-center">
                 {iconos.map(icono=>(
-                    <a key={icono.id} href={icono.link} className="btn btn-dark rounded-circle ms-1">
+                    <a key={icono.id} href={icono.link} className="btn btn-dark rounded-circle ms-1" target="_blank" rel="noopener noreferrer">
                         <div className="mt-1">
                             <i className={icono.icono}></i>
                         </div>
