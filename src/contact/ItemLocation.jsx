@@ -12,9 +12,9 @@ const locations=[
   { id: 9, location: 'Bahía Blanca' },
   { id: 10, location: 'Puán' },
   { id: 11, location: 'Adolfo González Chávez' },
-  { id: 12, location: 'Patagones' },
+  { id: 12, location: 'Carmen de Patagones' },
   { id: 13, location: 'Carhué' },
-  { id: 14, location: 'Coronel Suárez' }
+  //{ id: 14, location: 'Coronel Suárez' }
 ];
 
 
@@ -22,15 +22,15 @@ export const ItemLocation = () => {
   return (
     <>
         
-        <div className="border rounded border-secondary border-3 position-relative pt-5">
+        <div className="border rounded border-gris border-5 position-relative pt-5">
             <BigIcon iconClass="bi bi-geo-alt-fill" link="https://maps.app.goo.gl/BLvJnbvKs3cv7ziA8"/>
             <p className="px-4 pt-3 mt-5">
-                Podés encontrarnos en Belgrano 532 de Lunes a viernes de a 16.00hs en bahía blanca
+                Podés encontrarnos en Belgrano 532 de Lunes a viernes de ? a 16.00hs en Bahía Blanca
             </p>
             <p className="px-4">
                 Además, bridamos nuestros servicios a otras localidades:
             </p>
-            <div className="d-flex justify-content-center">
+            <div className="d-flex justify-content-center pb-3">
                 <ul className="list-group pb-3 text-start ms-5">
                     {locations.map(loc=>(
                         <li key={loc.id}

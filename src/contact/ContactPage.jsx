@@ -7,10 +7,10 @@ export const ContactPage = () => {
   return (
     <>
       <div className='container-md my-5 text-center mx-auto'>
-        <div className='row justify-content-center mt-5'>
+        <div className='row justify-content-center mt-5 align-items-center'>
           {/* Primera columna */}
           <div className="col-12 col-sm-10 col-lg-6 col-xxl-5 mt-5">
-            <div className="row h-100 mt-5 mb-1 mb-md-5">
+            <div className="row h-100 mt-5 mb-1 mb-md-5 justify-content-center">
               <div className="col-10 h-100">
                     <ItemLocation/>
               </div>
