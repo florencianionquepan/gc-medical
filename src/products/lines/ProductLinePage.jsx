@@ -42,9 +42,9 @@ export const ProductLinePage = () => {
       { showSearch && 
         <SearchComponent onSearch={handleSearch}/>
       }
-        <div className='row m-5'>
+        <div className='row m-5 justify-content-center'>
             { filteredProducts.map((pro)=>(
-                <div key={pro.id} className="col-6 col-md-4 mb-3">
+                <div key={pro.id} className="col-12 col-sm-10 col-md-6 col-lg-4  mb-3">
                     <ProductCard product={pro}/>
                 </div>
             ))}

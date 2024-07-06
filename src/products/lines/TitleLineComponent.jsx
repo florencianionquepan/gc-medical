@@ -5,7 +5,7 @@ export const TitleLineComponent = ({title}) => {
 
   return (
     <>
-        <h2 className="border-bottom pb-2"> Productos de {titleModified} </h2>
+        <h2 className="border-bottom pb-2 rozha-one"> Productos de {titleModified} </h2>
     </>
   )
 }
