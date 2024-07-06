@@ -3,19 +3,33 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { getProductsByLine } from '../helpers/getProductsByLine';
 import {ProductCard} from '../ProductCard';
 import { TitleLineComponent } from './TitleLineComponent';
+import { SearchComponent } from '../../assets/SearchComponent';
 
 export const ProductLinePage = () => {
 
   const {linea} = useParams();
-  const navigate = useNavigate();
+  //const navigate = useNavigate();
 
   const [products, setProducts] = useState([]);
 
     useEffect(() => {
       const products = getProductsByLine(linea);
       setProducts(products);
-      console.log(products);
+      //console.log(products);
     }, [linea]);
+
+  //logica filtrado
+  const [search, setSearch] = useState("");
+
+  const handleSearch = (searchTerm) => {
+    setSearch(searchTerm);
+  };
+
+  //al inicio, search es una cadena vacia. todos cumplen esa condicion
+  const filteredProducts = products.filter(product => 
+    product.name.toLowerCase().includes(search.toLowerCase()) || 
+    product.provider.toLowerCase().includes(search.toLowerCase())
+  );  
 
   const showSearch = (products.length>3);
 
@@ -26,14 +40,10 @@ export const ProductLinePage = () => {
       </div>
       
       { showSearch && 
-        <div className='row m-5'>
-            <form className="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-            <input type="search" className="form-control" placeholder="Buscar por nombre o por linea..." aria-label="Search"/>
-            </form>
-        </div>
+        <SearchComponent onSearch={handleSearch}/>
       }
         <div className='row m-5'>
-            { products.map((pro)=>(
+            { filteredProducts.map((pro)=>(
                 <div key={pro.id} className="col-6 col-md-4 mb-3">
                     <ProductCard product={pro}/>
                 </div>
