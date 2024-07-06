@@ -3,7 +3,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import { getProductsByLine } from '../helpers/getProductsByLine';
 import {ProductCard} from '../ProductCard';
 import { TitleLineComponent } from './TitleLineComponent';
-import { SearchComponent } from '../../assets/SearchComponent';
+import { SearchComponent } from '../../assets/utils/SearchComponent';
 
 export const ProductLinePage = () => {
 
@@ -42,7 +42,7 @@ export const ProductLinePage = () => {
       { showSearch && 
         <SearchComponent onSearch={handleSearch}/>
       }
-        <div className='row m-5 justify-content-center'>
+        <div className='row m-5 justify-content-center justify-content-md-start'>
             { filteredProducts.map((pro)=>(
                 <div key={pro.id} className="col-12 col-sm-10 col-md-6 col-lg-4  mb-3">
                     <ProductCard product={pro}/>

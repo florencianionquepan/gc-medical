@@ -1,4 +1,4 @@
-import {BreakpointIndicator} from './../assets/BreakpointIndicator'
+import {BreakpointIndicator} from './../assets/utils/BreakpointIndicator'
 import { Carousel } from './Carousel'
 import { ProductsSection } from './ProductsSection'
 import { ContactSection } from './ContactSection'

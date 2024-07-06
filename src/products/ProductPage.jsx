@@ -3,7 +3,7 @@ import {getProducts} from './helpers/getProducts';
 import { ProductCard } from './ProductCard';
 
 import './products.css';
-import { SearchComponent } from '../assets/SearchComponent';
+import { SearchComponent } from '../assets/utils/SearchComponent';
 
 export const ProductPage = () => {
 

@@ -10,9 +10,11 @@ export const ProductCard = ({product}) => {
         <div className="card-body">
             <h5 className="card-title">{product.name}</h5>
             <p className="card-text"> Proveedor: {product.provider} </p>
-            <Link to={`/productos/${product.id}`} className="btn btn-gris">
-              Ver detalles
-            </Link>
+            <div className="d-flex justify-content-end me-4">
+              <Link to={`/productos/${product.id}`} className="btn btn-gris">
+                Ver detalles
+              </Link>
+            </div>
         </div>
     </div>
   )

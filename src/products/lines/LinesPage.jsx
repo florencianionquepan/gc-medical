@@ -1,5 +1,5 @@
 import { LineComponent } from "./LineComponent"
-import {BreakpointIndicator} from './../../assets/BreakpointIndicator';
+import {BreakpointIndicator} from './../../assets/utils/BreakpointIndicator';
 import items from './../../assets/helpers/itemsLines';
 
 export const LinesPage = () => {

@@ -1,4 +1,4 @@
-import {ImageComponent} from "../assets/ImageComponent";
+import {ImageComponent} from "../assets/utils/ImageComponent";
 
 export const ItemCarousel = ({isActive, imagePath, imageAlt, hash, positionText, title, description1, description2}) => {
 
