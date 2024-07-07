@@ -1,4 +1,22 @@
 .custom-shadow {
     box-shadow: 0px 10px 20px -5px rgba(5, 92, 141, 0.7);
 }
+
+
+.circle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px; /* Ajusta el tamaño según sea necesario */
+    height: 150px; /* Asegúrate de que sea igual al width para mantener el círculo */
+    border-radius: 50%;
+    border: 3px solid #ccc; /* Cambia esto al color que prefieras */
+    margin: 0 auto 20px; /* Centra el círculo y agrega un margen inferior */
+  }
   
+  .circle-title {
+    text-align: center;
+    font-size: 1em;
+    margin: 0;
+    padding: 10px; /* Opcional: ajusta el padding según el tamaño del círculo */
+  }
