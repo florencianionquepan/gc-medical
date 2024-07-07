@@ -14,9 +14,9 @@ export const AboutComponent = ({title,text}) => {
 
   return (
     <>
-        <div className="text-center bg-celeste p-2 rounded">
-            <div className="border border-gris border-5 bg-body rounded">
-                <h5> {title} </h5>
+        <div className="rounded">
+            <div className="border border-gris border-5 bg-body rounded p-3">
+                <h5 className="rozha-one"> {title} </h5>
                  {splitText(text)} 
             </div>
         </div>
