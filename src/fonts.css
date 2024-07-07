@@ -20,6 +20,11 @@ body{
 .rozha-one{
     font-family: 'rozha-one';
 }
+
+.rozha-one-lig{
+    font-family: 'rozha-one';
+    /*letter-spacing: 0.01em;*/ 
+}
   
   /* 
   nav{

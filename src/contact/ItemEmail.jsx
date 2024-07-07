@@ -16,16 +16,23 @@ export const ItemEmail = () => {
                 info@gcmedical.com.ar
             </p>
             <p className="px-4"> Podés encontrarnos en otras redes sociales </p>
-            {iconos.map(ic=>(
-                        <li key={ic.id}
-                            className="list-group-item rozha-one">
-                            <a href={ic.link} className="btn btn-dark btn-sm rounded-circle ms-1" target="_blank" rel="noopener noreferrer">
-                              <div className="mt-1">
-                                  <i className={ic.icono}></i>
-                              </div>
-                            </a> {ic.text}
-                        </li>
-                    ))} 
+            <div className="d-flex justify-content-center pb-3">
+              <ul className="list-group pb-3 text-start ms-5">
+                {iconos.map(ic=>(
+                            <li key={ic.id}
+                                className="list-group-item border border-0 pb-0 ms-2">
+                                <a href={ic.link} className="btn btn-dark btn-sm rounded-circle ms-1" target="_blank" rel="noopener noreferrer">
+                                  <div className="mt-1">
+                                      <i className={ic.icono}></i>
+                                  </div>
+                                </a>
+                                <span className="ms-2 rozha-one-lig">
+                                  {ic.text}
+                                </span> 
+                            </li>
+                        ))} 
+              </ul>
+            </div>
             
         </div>
     </>
