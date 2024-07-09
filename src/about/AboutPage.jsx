@@ -101,9 +101,23 @@ export const AboutPage = () => {
           </div>
         </div>
 
-        <div className="row justify-content-center m-3">
-          <h5 className="rozha-one">Habilitaciones</h5>
+            {/* Habilitaciones */}
+        <div className="row justify-content-center mt-3 mx-5">
+          <div className='col-10 col-md-8'>
+            <h5 className="rozha-one">Habilitaciones</h5>
+          </div>
         </div>
+        <div className="row justify-content-center mb-3 mx-5">
+          <div className="col-10 col-md-8 d-flex border rounded border-5 border-gris">
+            <div className='col-10 col-md-6 my-3'>
+              <img className="img-fluid" src={'img/anmat.webp'} alt="logo-anmat"/>
+            </div>
+            <div className='col-10 col-md-6 my-3'>
+              <img className="img-fluid" src={'img/ministerio.webp'} alt="logo-ministerio"/>
+            </div>
+          </div>
+            
+          </div>
     </div>
   )
 }
