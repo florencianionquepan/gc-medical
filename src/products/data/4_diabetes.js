@@ -7,14 +7,14 @@ export const diabetes=[
         hash:'',
         description:'Ajusta automáticamente la administración de insulina y corrige los niveles de glucosa cada 5 minutos, las 24 horas del día, los 7 días de la semana, sin necesidad de punciones capilares.'
     },
-    {
+    /* {
         id:42,
         name:'Sistema MiniMed 670G',
         provider:'Medtronic',
         image:'diabetes2.webp',
         hash:'',
         description:'El sistema MiniMed 670G de Medtronic está destinado a la infusión continua de insulina basal (a índices seleccionables por el usuario) y la administración de bolus de insulina (en cantidades seleccionables por el usuario) para el control de la diabetes mellitus de Tipo 1 en personas a partir de 14 años de edad que necesitan insulina, así como para el control y la determinación de tendencias continuos de los niveles de glucosa en el líquido que se encuentra bajo la piel. El sistema MiniMed 670G incluye la tecnología SmartGuard, que puede programarse para ajustar automáticamente la infusión de insulina basal en función de los valores de glucosa del sensor del monitor continuo de glucosa, y puede suspender la infusión de insulina cuando el valor de glucosa del sensor desciende o se prevé que va a descender por debajo de los valores umbral predefinidos.'
-    },
+    }, */
     {
         id:43,
         name:'Guardian Sensor Transmisor',
