@@ -7,11 +7,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 150px; /* Ajusta el tamaño según sea necesario */
-    height: 150px; /* Asegúrate de que sea igual al width para mantener el círculo */
+    width: 105px; /* Ajusta el tamaño según sea necesario */
+    height: 105px; /* Asegúrate de que sea igual al width para mantener el círculo */
     border-radius: 50%;
     border: 3px solid #ccc; /* Cambia esto al color que prefieras */
-    margin: 0 auto 20px; /* Centra el círculo y agrega un margen inferior */
+    margin: 0 auto 10px; /* Centra el círculo y agrega un margen inferior */
   }
   
   .circle-title {
