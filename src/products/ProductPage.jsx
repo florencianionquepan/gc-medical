@@ -15,12 +15,26 @@ export const ProductPage = () => {
       //console.log(products);
     }, []);
 
+    //logica filtrado - toda la logica luego pasarla a un archivo aparte
+  const [search, setSearch] = useState("");
+
+  const handleSearch = (searchTerm) => {
+    setSearch(searchTerm);
+  };
+
+  //al inicio, search es una cadena vacia. todos cumplen esa condicion
+  const filteredProducts = products.filter(product => 
+    product.name.toLowerCase().includes(search.toLowerCase()) || 
+    product.provider.toLowerCase().includes(search.toLowerCase())
+  );  
+
+
 
   return (
     <div className='container-md'>
-        <SearchComponent/>
+        <SearchComponent onSearch={handleSearch} />
         <div className='row m-5'>
-            { products.map((pro)=>(
+            { filteredProducts.map((pro)=>(
                 <div key={pro.id} className="col-6 col-md-4 mb-3">
                     <ProductCard product={pro}/>
                 </div>
