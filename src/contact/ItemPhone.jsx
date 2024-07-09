@@ -9,7 +9,7 @@ export const ItemPhone = () => {
                 +54 291 37-2900
             </p>
             <p className="px-4">
-                ¡En nuestro Whatsapp tambien podes encontrar nuestro catálogo!
+                ¡En nuestro Whatsapp podes encontrar los productos y servicios que ofrecemos!
             </p>
         </div>
     </>
