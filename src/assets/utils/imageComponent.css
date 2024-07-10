@@ -1,4 +1,4 @@
-.img-blur{
+/* .img-blur{
     opacity: 1;
     transition: opacity 200ms ease-out;
 }
@@ -8,7 +8,7 @@
     position: absolute;
     inset: 0;
     animation:  pulse 2.5s infinite;
-}
+} */
 
 @keyframes pulse {
     0% {

@@ -11,11 +11,11 @@ const dynamicClass=`position-absolute ${positionText} rounded bg-white bg-opacit
                       path={imagePath} 
                       clase={"d-block w-100"}
                       imageAlt={imageAlt}/>
-        <div className={dynamicClass}>
+        {/* <div className={dynamicClass}>
             <h2 className="title-resp text-dark">{title}</h2>
             <p className="text-resp mb-0 text-dark">{description1}</p>
             <p className="text-resp mb-0 text-dark"> {description2} </p>      
-        </div>    
+        </div>  */}   
     </div>
   )
 }
