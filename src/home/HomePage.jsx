@@ -13,9 +13,9 @@ export const HomePage = () => {
       <CarouselLines/>
     </div>
     <div className='container-lg'>
-      <AboutSection/>
       <ProductsSection/>
       <ContactSection/>
+      <AboutSection/>
     </div>
 
     </>
