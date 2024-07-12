@@ -7,6 +7,7 @@ export const ContactPage = () => {
   return (
     <>
       <div className='container-md my-5 text-center mx-auto'>
+      <h2 className="border-bottom pb-2 text-md-start"> Contactate con nosotros </h2>
         <div className='row justify-content-center mt-5 align-items-center'>
           {/* Primera columna */}
           <div className="col-12 col-sm-10 col-lg-6 col-xxl-5 mt-5">
