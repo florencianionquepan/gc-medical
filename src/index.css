@@ -63,3 +63,12 @@ este el naranja: #EA7200*/
   border-color: #9DB9DF !important;
   /*border-width: 10px !important;*/
 }
+
+.border-gris-12{
+  border-color: #9DB9DF !important;
+  border-width: 12px !important;
+}
+
+.border-azul{
+  border-color: #055C8D !important;
+}
