@@ -10,7 +10,7 @@ const items=[
     },
     { 
       id: 22,
-      imagePath:'./img/products/oncologia1.jpg', 
+      imagePath:'./img/products/oncologia1.webp', 
       linea: 'Oncología', 
       text:'',
       link: 'linea/oncologia',
