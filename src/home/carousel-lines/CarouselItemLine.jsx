@@ -14,7 +14,7 @@ export const CarouselItemLine = ({imagePath,text,linePath}) => {
             </div>
         </div>
         <div className="card-body bg-naranja title-line-custom" style={{zIndex:10}}>
-            <h6 className="card-title text-end text-black rozha-one mb-0 text-decoration-none">
+            <h6 className="card-title text-end text-white rozha-one mb-0 text-decoration-none">
                 {text}
             </h6>
         </div> 

@@ -6,7 +6,7 @@
 .shadow-custom {
     box-shadow: 5px 5px 0px  var(--mi-azul),
     5px -5px 0px var(--mi-azul),
-    -5px 0px 0px var(--mi-azul)D;
+    -5px 0px 0px var(--mi-azul);
     background-color: transparent;
     overflow-y: hidden !important;
 }
