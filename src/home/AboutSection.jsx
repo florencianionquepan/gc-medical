@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 export const AboutSection = () => {
   return (
     <div className='row align-items-center m-5 border border-gris border-5 rounded rozha-one'>
-      <div className='col-12 col-md-7 text-center my-3 my-md-0 order-2'>
+      <div className='col-12 col-md-7 text-center my-3 my-md-0 order-2 p-0 mb-0'>
         <img className='img-fluid rounded' src={'/img/nosotros.webp'}/>
       </div>
       <div className='col-12 col-md-5 display-6 text-center py-2 bg-body rounded order-1'>

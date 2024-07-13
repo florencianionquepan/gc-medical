@@ -1,6 +1,7 @@
 import items from './../assets/helpers/itemsLines';
 import { Swiper,SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
+import './swiper-custom.css';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';

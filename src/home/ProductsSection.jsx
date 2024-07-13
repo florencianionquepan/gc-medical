@@ -4,7 +4,7 @@ import { Carousel } from "./Carousel"
 export const ProductsSection = () => {
   return (
     <div className='row align-items-center justify-content-center m-5 border border-gris border-5 rounded rozha-one'>
-      <div className='col-12 col-lg-6 display-6 border-5 border-gris order-2'>
+      <div className='col-12 col-lg-6 order-2 p-0'>
         {/* <div className="row align-items-center mx-auto rounded bg-body mt-2">
           <div className="col-6">
             <img src={'/img/supplier/lexel.webp'} className="img-fluid" alt="lexel"/>
