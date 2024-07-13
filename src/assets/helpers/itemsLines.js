@@ -46,7 +46,7 @@ const items=[
     },
     { 
       id: 26,
-      imagePath:'./img/products/neurologia2.jpg', 
+      imagePath:'./img/products/cardiologia1.webp', 
       linea: 'Cardiologia', 
       text:'',
       link: 'linea/cardiologia',
@@ -54,8 +54,8 @@ const items=[
       orderText:'order-md-first' 
     },
     { 
-      id: 28,
-      imagePath:'./img/products/neurologia3.jpg', 
+      id: 27,
+      imagePath:'./img/products/default.webp', 
       linea: 'Gastroenterología', 
       text:'',
       link: 'linea/gastroenterologia', 
@@ -63,8 +63,8 @@ const items=[
       orderText:''
     },
     { 
-      id: 29,
-      imagePath:'./img/products/neurologia4.jpg', 
+      id: 28,
+      imagePath:'./img/products/default.webp', 
       linea: 'Cirugia General', 
       text:'',
       link: 'linea/cirugia',
