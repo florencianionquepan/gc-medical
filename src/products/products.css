@@ -1,33 +1,8 @@
-.card-custom{
-    cursor: pointer; 
-    transition: transform 0.3s ease;
-}
-
-.card-custom:hover {
-    transform: scale(1.05);
-}
-
-.card-img-top {
-    max-width: 100%; /* Establece el ancho máximo */
-    max-height: 300px; /* Establece el alto máximo */
-    object-fit: contain; /* Ajusta la imagen respetando la proporción */
-}
-
-.img-detail{
-    max-width: 90%;
-}
-
 :root {
     --mi-azul:  #4C80C5;
     --mi-sombra: #055C8D; 
 }
 
-.shadow-custom-product {
-    box-shadow: 5px 5px 0px  var(--mi-azul),
-    5px -10px 0px var(--mi-azul),
-    5px 0px 0px var(--mi-azul);
-    background-color: transparent;
-}
 
 .box-custom-product{
     background-color: var(--mi-azul);
@@ -53,3 +28,4 @@
     text-align: left;
     white-space: nowrap;
 }
+

@@ -7,11 +7,9 @@ export const ProductCard = ({product}) => {
   return (
     <>
       <div className="card card-product pt-4 mx-auto position-relative">
-        <div className='box-custom-product mb-3 me-3'>
-            <div className='border rounded-circle shadow-custom-product'>
-                <div className='rounded-circle border border-5 border-white'>
-                <img src={imagePath} className="img-fluid rounded-circle border border-gris-12" alt={product.name}/>
-                </div>
+        <div className='box-custom-product mb-3 mx-4'>
+            <div className='rounded-circle border border-5 border-white text-center'>
+              <img src={imagePath} className="rounded-circle border border-gris-12 d-block w-100" alt={product.name}/>
             </div>
         </div>
         <div className="card-body bg-naranja title-product-custom" style={{zIndex:10}}>
