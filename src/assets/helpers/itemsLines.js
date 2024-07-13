@@ -37,7 +37,7 @@ const items=[
     },
     { 
       id: 25,
-      imagePath:'./img/products/neurologia1.jpg', 
+      imagePath:'./img/products/neurologia1.webp', 
       linea: 'Neurología', 
       text:'',
       link: 'linea/neurologia',
