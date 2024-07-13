@@ -5,7 +5,7 @@ import { ItemCarousel } from './ItemCarousel';
 const slides=[
   {
     id: 1,
-    imagePath: 'img/carousel1.webp',
+    imagePath: 'img/productos1.png',
     hash:'LKN-TW9i^+014;W?xuoc~pI;WB%2',
     imageDescription:'Imagen de portada 1',
     positionText:'top-50 start-0 p-2 p-lg-4 p-xxl-5 mt-0 mt-md-3 mt-xl-5 ms-4 ms-md-3 ms-lg-5',
@@ -15,7 +15,7 @@ const slides=[
   },
   {
     id: 2,
-    imagePath: 'img/carousel1.webp',
+    imagePath: 'img/productos1.png',
     hash:'LJFQOe4p%gVp.AKmn2xuVrRhx^R-',
     imageDescription:'Imagen de portada 2',
     positionText:'top-50 end-0 p-2 p-md-3 p-lg-4 p-xxl-5 mt-0 mt-md-3 mt-xl-5 ms-4 ms-md-0 me-5',
@@ -24,7 +24,7 @@ const slides=[
   },
   {
     id: 3,
-    imagePath: 'img/carousel1.webp',
+    imagePath: 'img/productos1.png',
     hash:'LTMb6^~q,tXRtRs.s:RjofjtM{kC',
     imageDescription:'Imagen de portada 3',
     positionText:' top-50 start-0 p-2 p-lg-4 p-xxl-5 mt-md-3 mt-xl-5 ms-4 ms-md-3 ms-lg-5 me-5',
@@ -49,11 +49,11 @@ export const Carousel = () => {
   return (
     <>
         <div id="carouselExampleIndicators" className="carousel carousel-dark slide" data-bs-ride="carousel">
-          <div className="carousel-indicators">
+{/*           <div className="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
+          </div> */}
           <div className="carousel-inner">
             {slides.map((slide, index) => (
               <ItemCarousel key={slide.id}
