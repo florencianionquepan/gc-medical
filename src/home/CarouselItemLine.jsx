@@ -4,7 +4,8 @@ import './itemLine.css';
 export const CarouselItemLine = ({imagePath,text,linePath}) => {
   return (
     <>
-    <div className="card p-4 mx-auto position-relative border-0 mx-4" style={{width: '20rem', overflow:'hidden'}}>
+    <Link to={`productos/${linePath}`} className="card card-line p-4 mx-auto position-relative border-0 mx-4 my-3" 
+        style={{width: '20rem', overflow:'hidden'}}>
         <div className='box-custom'>
             <div className='border rounded-circle shadow-custom'>
                 <div className='rounded-circle border border-5 border-white'>
@@ -13,11 +14,11 @@ export const CarouselItemLine = ({imagePath,text,linePath}) => {
             </div>
         </div>
         <div className="card-body bg-naranja title-line-custom" style={{zIndex:10}}>
-            <Link to={`productos/${linePath}`} className="card-title text-end text-white rozha-one mb-0 text-decoration-none fs-4">
+            <h5 className="card-title text-end text-black rozha-one mb-0 text-decoration-none">
                 {text}
-            </Link>
+            </h5>
         </div> 
-    </div>
+    </Link>
     
     </>
     
