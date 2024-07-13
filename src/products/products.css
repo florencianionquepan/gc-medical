@@ -16,3 +16,40 @@
 .img-detail{
     max-width: 90%;
 }
+
+:root {
+    --mi-azul:  #4C80C5;
+    --mi-sombra: #055C8D; 
+}
+
+.shadow-custom-product {
+    box-shadow: 5px 5px 0px  var(--mi-azul),
+    5px -10px 0px var(--mi-azul),
+    5px 0px 0px var(--mi-azul);
+    background-color: transparent;
+}
+
+.box-custom-product{
+    background-color: var(--mi-azul);
+    box-shadow: -60px 0px 0px var(--mi-azul);
+    padding: 10px;
+    border-top-right-radius: 65%;
+    border-bottom-right-radius: 65%;
+} 
+
+.card-product{
+    overflow: hidden;
+}
+
+
+.title-product-custom {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: -100px 0px 0px 0px  #EA7200;
+    border-radius: 0 30px 30px 0;
+    padding-left: 50px !important;
+    text-align: left;
+    white-space: nowrap;
+}

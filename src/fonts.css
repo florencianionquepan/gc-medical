@@ -25,6 +25,10 @@ body{
     font-family: 'rozha-one';
     /*letter-spacing: 0.01em;*/ 
 }
+
+.inter{
+    font-family: 'inter';
+}
   
   /* 
   nav{
