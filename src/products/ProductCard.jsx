@@ -7,17 +7,23 @@ export const ProductCard = ({product}) => {
   return (
     <>
       <div className="card card-product pt-4 mx-auto position-relative">
-        <div className='box-custom-product mb-3 mx-4'>
-            <div className='rounded-circle border border-5 border-white text-center'>
-              <img src={imagePath} className="rounded-circle border border-gris-12 d-block w-100" alt={product.name}/>
-            </div>
+        <div className="picture">
+          <div className='box-custom-product mb-3 mx-4'>
+              <div className='rounded-circle border border-5 border-white text-center'>
+                <img src={imagePath} className="rounded-circle border border-gris-12 d-block w-100" alt={product.name}/>
+              </div>
+          </div>
+          <div className="card-body bg-naranja title-product-custom" style={{zIndex:10}}>
+              <h6 className="card-title text-end text-white rozha-one mb-0 text-decoration-none">
+                  {product.name}
+              </h6>
+          </div>
         </div>
-        <div className="card-body bg-naranja title-product-custom" style={{zIndex:10}}>
-            <h6 className="card-title text-end text-white rozha-one mb-0 text-decoration-none">
-                {product.name}
-            </h6>
-        </div> 
-        <div className="bg-celeste text-white py-2">
+        <Link to={`/productos/${product.id}`} 
+              className="btn btn-light border text-center py-3 fs-5 link-container">
+              Ver más &rarr;
+        </Link> 
+        <div className="bg-celeste text-white py-2" style={{zIndex:10}}>
           <h6 className="mb-0 mx-2 inter text-uppercase"> {product.provider} </h6>
         </div>
         {/* <div className="card-body">
@@ -30,6 +36,7 @@ export const ProductCard = ({product}) => {
             </div>
         </div> */}
       </div>
+      
     </>
     
   )
