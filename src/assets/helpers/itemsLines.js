@@ -2,7 +2,7 @@ const items=[
     { 
       id: 21,
       imagePath:'./img/products/heridas1.jpg', 
-      linea: 'Tratamiento de heridas', 
+      linea: 'Tratamiento avanzado de heridas', 
       text:'',
       link: 'linea/heridas', 
       bg:'bg-celeste', 

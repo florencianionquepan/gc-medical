@@ -1,7 +1,7 @@
 
 export const TitleLineComponent = ({title}) => {
 
-  const titleModified = title === "heridas" ? "Tratamiento de heridas" : title.charAt(0).toUpperCase() + title.slice(1);
+  const titleModified = title === "heridas" ? "Tratamiento avanzado de heridas" : title.charAt(0).toUpperCase() + title.slice(1);
 
   return (
     <>

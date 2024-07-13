@@ -5,7 +5,7 @@ const menuItems=[
   {id:1,title:'INICIO',link:"/"},
   {id:2,title:'PRODUCTOS',link:"/",subItems: [
     { id: 20, name:'all', title: 'Ver todo', link: '/productos' },
-    { id: 21, name:'heridas', title: 'Tratamiento de heridas', link: '/productos/linea/heridas' },
+    { id: 21, name:'heridas', title: 'Tratamiento avanzado de heridas', link: '/productos/linea/heridas' },
     { id: 22, name:'oncologia', title: 'Oncología', link: '/productos/linea/oncologia' },
     { id: 23, name:'urologia', title: 'Urología', link: '/productos/linea/urologia' },
     { id: 24, name:'diabetes', title: 'Diabetes', link: '/productos/linea/diabetes' },
