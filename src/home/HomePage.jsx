@@ -1,9 +1,8 @@
 import {BreakpointIndicator} from './../assets/utils/BreakpointIndicator'
-import { Carousel } from './Carousel'
 import { ProductsSection } from './ProductsSection'
 import { ContactSection } from './ContactSection'
 import { AboutSection } from './AboutSection'
-import { CarouselLines } from './CarouselLines'
+import { CarouselLines } from './carousel-lines/CarouselLines'
 
 export const HomePage = () => {
   return (

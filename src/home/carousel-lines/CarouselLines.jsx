@@ -1,4 +1,4 @@
-import items from './../assets/helpers/itemsLines';
+import items from '../../assets/helpers/itemsLines';
 import { Swiper,SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination } from 'swiper/modules';
 import './swiper-custom.css';
