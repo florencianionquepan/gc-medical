@@ -4,7 +4,7 @@ import './itemLine.css';
 export const CarouselItemLine = ({imagePath,text,linePath}) => {
   return (
     <>
-    <div className="card p-4 mx-auto position-relative border-0" style={{width: '20rem', overflow:'hidden'}}>
+    <div className="card p-4 mx-auto position-relative border-0 mx-4" style={{width: '20rem', overflow:'hidden'}}>
         <div className='box-custom'>
             <div className='border rounded-circle shadow-custom'>
                 <div className='rounded-circle border border-5 border-white'>
