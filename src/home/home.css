@@ -27,3 +27,30 @@
     width: 100%;
     height: 40vw !important;
 }
+
+/* Para seccion about */
+.bg-hash{
+    background: linear-gradient(135deg, #C8D7E5, #D8E7F5, #C8D7E5);
+}
+
+@media (min-width: 1501px) {
+    .img-nosotros {
+        margin-left: 10%;
+    }
+}
+
+@media (max-width:1270px) and (min-width: 811px){
+    .img-nosotros{
+        max-width: 130%;
+        height: auto;
+        transform: translateX(-15%);
+    }
+}
+
+@media (max-width:810px){
+    .img-nosotros{
+        max-width: 100%;
+        height: auto;
+    }
+}
+
