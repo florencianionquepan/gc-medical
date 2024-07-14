@@ -1,17 +1,14 @@
 import { useEffect, useState } from "react"
 import {BlurhashCanvas} from "react-blurhash";
-import "./imageComponent.css";
 
 export const ImageComponent = ({hash, claseHash, path, clase, imageAlt}) => {
 
   const [imageLoaded, setImageLoaded] = useState(false);
-  const [hideBlurhash, setHideBlurhash] = useState(false);
 
   useEffect(() => {
     const img= new Image()
     img.onload = () =>{
       setImageLoaded(true);
-      setTimeout(() => setHideBlurhash(true), 200); 
     }
     img.src= path
   }, [path])
@@ -19,19 +16,18 @@ export const ImageComponent = ({hash, claseHash, path, clase, imageAlt}) => {
 
   return (
     <>
-      {!hideBlurhash &&
-        <div className={`${imageLoaded? 'no-blurhash':'img-blur'}`} >
+        <div style={{display: imageLoaded? 'none':'inline'}} >
           <BlurhashCanvas
               hash={hash}
               punch={1} 
               className={claseHash}/>
-        </div>}
-        { imageLoaded && (
-            <img
+        </div> 
+        <img
             src={path}
             alt={imageAlt}
             className={clase}
-        />)}
+            style={{display: !imageLoaded? 'none':'inline'}}
+        />
     </>
   )
 }
