@@ -1,3 +1,14 @@
 .swiper-pagination-bullet-active{
     background: #055C8D !important;
 }
+
+@media(min-width: 1501px){
+    .width-carousel{
+        max-width: 75%;
+        text-align: center;
+    }
+
+    .swiper.swiper-initialized.swiper-horizontal.swiper-backface-hidden{
+        align-self: center;
+    }
+}

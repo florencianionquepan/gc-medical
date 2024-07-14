@@ -10,7 +10,7 @@ import { CarouselItemLine } from './CarouselItemLine';
 export const CarouselLines = () => {
 
   return (
-    <div className='row justify-content-center mx-xl-5'>
+    <div className='row justify-content-center width-carousel mx-auto'>
     <Swiper
         modules={[Pagination, Navigation]}
         breakpoints={{
