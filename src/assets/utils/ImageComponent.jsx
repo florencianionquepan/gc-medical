@@ -16,18 +16,17 @@ export const ImageComponent = ({hash, claseHash, path, clase, imageAlt}) => {
 
   return (
     <>
-        <div style={{display: imageLoaded? 'none':'inline'}} >
+        {!imageLoaded && <div>
           <BlurhashCanvas
               hash={hash}
               punch={1} 
               className={claseHash}/>
-        </div> 
-        <img
+        </div> }
+        {imageLoaded && <img
             src={path}
             alt={imageAlt}
             className={clase}
-            style={{display: !imageLoaded? 'none':'inline'}}
-        />
+        />}
     </>
   )
 }

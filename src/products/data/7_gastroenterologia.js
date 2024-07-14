@@ -4,7 +4,7 @@ export const gastroenterologia=[
         name:'Hemoclip SureClip',
         provider:'Promedon',
         image:'default.webp',
-        hash:'',
+        hash:'LZQm9jxu-;aykCt7axaz~qWBMxfQ',
         description:''
     },
     {
@@ -28,7 +28,7 @@ export const gastroenterologia=[
         name:'Asa De Polipectomía Fría LesionHunter',
         provider:'Promedon',
         image:'default.webp',
-        hash:'',
+        hash:'LZQm9jxu-;aykCt7axaz~qWBMxfQ',
         description:''
     },
     {
