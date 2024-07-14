@@ -2,74 +2,58 @@ const items=[
     { 
       id: 21,
       imagePath:'./img/products/heridas1.webp', 
+      hash:'LdQv%k%L~pD*%MWBRjof%LR*M|xa',
       linea: 'Tratamiento avanzado de heridas', 
-      text:'',
-      link: 'linea/heridas', 
-      bg:'bg-celeste', 
-      orderText:''
+      link: 'linea/heridas'
     },
     { 
       id: 22,
       imagePath:'./img/products/oncologia1.webp', 
-      linea: 'Oncología', 
-      text:'',
-      link: 'linea/oncologia',
-      bg:'bg-gris', 
-      orderText:'order-md-first'
+      hash:'LdQv%k%L~pD*%MWBRjof%LR*M|xa',
+      linea: 'Oncología',
+      link: 'linea/oncologia'
     },
     { 
       id: 23,
       imagePath:'./img/products/urologia1.jpg', 
-      linea: 'Urología', 
-      text:'',
-      link: 'linea/urologia',
-      bg:'bg-azul', 
-      orderText:''
+      hash:'LdQv%k%L~pD*%MWBRjof%LR*M|xa',
+      linea: 'Urología',
+      link: 'linea/urologia'
     },
     { 
       id: 24,
       imagePath:'./img/products/diabetes1.webp', 
+      hash:'LdQv%k%L~pD*%MWBRjof%LR*M|xa',
       linea: 'Diabetes', 
-      text:'',
-      link: 'linea/diabetes',
-      bg:'bg-celeste', 
-      orderText:'order-md-first'
+      link: 'linea/diabetes'
     },
     { 
       id: 25,
       imagePath:'./img/products/neurologia1.webp', 
+      hash:'LdQv%k%L~pD*%MWBRjof%LR*M|xa',
       linea: 'Neurología', 
-      text:'',
-      link: 'linea/neurologia',
-      bg:'bg-gris', 
-      orderText:'' 
+      link: 'linea/neurologia'
     },
     { 
       id: 26,
       imagePath:'./img/products/cardiologia1.webp', 
-      linea: 'Cardiologia', 
-      text:'',
-      link: 'linea/cardiologia',
-      bg:'bg-azul', 
-      orderText:'order-md-first' 
+      hash:'LdQv%k%L~pD*%MWBRjof%LR*M|xa',
+      linea: 'Cardiologia',
+      link: 'linea/cardiologia'
     },
     { 
       id: 27,
       imagePath:'./img/products/default.webp', 
+      hash:'LdQv%k%L~pD*%MWBRjof%LR*M|xa',
       linea: 'Gastroenterología', 
-      text:'',
-      link: 'linea/gastroenterologia', 
-      bg:'bg-gris', 
-      orderText:''
+      link: 'linea/gastroenterologia'
     },
     { 
       id: 28,
       imagePath:'./img/products/default.webp', 
-      linea: 'Cirugia General', 
-      text:'',
-      link: 'linea/cirugia',
-      bg:'bg-celeste', 
-      orderText:''
+      hash:'LdQv%k%L~pD*%MWBRjof%LR*M|xa',
+      linea: 'Cirugia General',
+      link: 'linea/cirugia'
     },
 ];
 

@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom';
 import './itemLine.css';
+import { ImageComponent } from '../../assets/utils/ImageComponent';
 
-export const CarouselItemLine = ({imagePath,text,linePath}) => {
+export const CarouselItemLine = ({imagePath,hash,text,linePath}) => {
   return (
     <>
     <Link to={`productos/${linePath}`} className="card card-line p-4 mx-auto position-relative border-0 mx-4 my-3" 
@@ -9,7 +10,13 @@ export const CarouselItemLine = ({imagePath,text,linePath}) => {
         <div className='box-custom'>
             <div className='border rounded-circle shadow-custom'>
                 <div className='rounded-circle border border-5 border-white'>
-                    <img src={imagePath} className="card-img-top rounded-circle border border-gris-12" alt={text}/>
+                    <ImageComponent 
+                        hash={hash}
+                        claseHash={'card-img-top rounded-circle border border-gris-12'}
+                        path={imagePath}
+                        clase={'card-img-top rounded-circle border border-gris-12'}
+                        imageAlt={text}
+                        />
                 </div>
             </div>
         </div>
