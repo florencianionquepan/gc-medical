@@ -17,17 +17,18 @@ export const CarouselLines = () => {
             0:{
                 slidesPerView:1
             },
-            768:{
+            825:{
                 slidesPerView:2,
-                spaceBetween:15
+                spaceBetween:10
             },
-            992:{
+            1250:{
                 slidesPerView:3,
-                spaceBetween:15
+                spaceBetween:10
             }
         }}
         loop={true}
         pagination={{clickable:true}}
+        navigation
         spaceBetween={1}
         slidesPerView={3}
         >
