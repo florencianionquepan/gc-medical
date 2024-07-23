@@ -7,7 +7,7 @@ export const BigIcon = ({iconClass, link}) => {
         d-flex justify-content-center align-items-center
         position-absolute top-0 start-50 translate-middle bg-body btn-contact" 
         style={{ aspectRatio: '1 / 1', maxWidth: '170px', '@media (minWidth: 1250px)': ''}}>
-            <i className={iconClass} style={{ fontSize: '400%'}}></i>
+            <i className={iconClass} style={{ fontSize: '400%', marginTop: '15px'}}></i>
         </div>
     </a>
     </>

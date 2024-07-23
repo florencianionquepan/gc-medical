@@ -1,10 +1,10 @@
 import { BigIcon } from "./BigIcon"
 
 const iconos=[
-  {id:10, icono:'bi bi-whatsapp', text:'291372900',link:'https://wa.me/+542914372900'},
+  {id:10, icono:'bi bi-whatsapp', text:'2914372900',link:'https://wa.me/+542914372900'},
   {id:11, icono:'bi bi-instagram', text:'@GcMedicalbb',link:'https://www.instagram.com/gcmedicalbb'},
   {id:12, icono:'bi bi-instagram', text:'@Gcmedicaldiabetes',link:'https://www.instagram.com/gcmedicaldiabetes'},
-  {id:13, icono:'bi bi-linkedin', text:'GC Medical',link:'#'}
+  {id:13, icono:'bi bi-linkedin', text:'GC Medical',link:'https://www.linkedin.com/in/gc-medical-18b7b8306/'}
 ];
 
 export const ItemEmail = () => {
