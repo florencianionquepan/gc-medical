@@ -13,7 +13,7 @@ export const WhatsAppIcon = () => {
 
   return (
     <div style={iconStyle}>
-      <a href='https://wa.me/+542914372900' className="btn btn-dark rounded-circle ms-1" target="_blank" rel="noopener noreferrer">
+      <a href='https://wa.me/+542914372900' className="btn btn-dark btn-lg rounded-circle ms-1" target="_blank" rel="noopener noreferrer">
       <div className="mt-1">
             <i className='bi bi-whatsapp'></i>
         </div>

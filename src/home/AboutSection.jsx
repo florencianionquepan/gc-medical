@@ -14,7 +14,7 @@ export const AboutSection = () => {
             />
       </div>
       <div className='col-12 col-md-5 display-6 text-center py-2 bg-body rounded order-1'>
-        <h1 className="display-2 text-md-start mb-0"> Sobre </h1>
+        <h1 className="display-2 text-md-start mb-0 ms-5"> Sobre </h1>
         <h1 className="display-2 text-md-end mt-0"> nosotros </h1>
         <Link className="btn btn-gris btn-lg" to='/nosotros'>Ver mas</Link>
       </div>
