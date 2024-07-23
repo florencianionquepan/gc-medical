@@ -1,5 +1,6 @@
 import { AboutComponent } from "./AboutComponent"
 import { ValuesComponent } from "./ValuesComponent";
+import {BreakpointIndicator} from "./../assets/utils/BreakpointIndicator";
 import {info} from "./data/info";
 import './about.css';
 
@@ -32,7 +33,6 @@ export const AboutPage = () => {
             <h5 className="rozha-one">
               {info[2].title}
             </h5>
-            este lo puse asi para que probemos pero lo puedo dejar como antes
           </div>
         </div>
         <div className="row justify-content-center mb-3 mx-5">
@@ -49,21 +49,20 @@ export const AboutPage = () => {
             <AboutComponent
                   title={info[3].title}
                   text={info[3].text}
+                  adClass={'pb-5'}
                   />
           </div>
         </div>
-        {/* Servicios */}
-        <div className="row justify-content-center align-items-center m-3">
-          <div className='col-10 col-md-8 col-lg-5 col-xxl-6 my-3'>
-            aca no tenia titulo pero para que quede como los otros cuadritos 
-            capaz le podemos poner alguno
+        {/* Segunda parte de nuestra historia */}
+        <div className="row justify-content-center align-items-center mx-3 custom-component">
+          <div className='col-10 col-md-8 col-lg-5 col-xxl-6 my-3 px-5'>
           <AboutComponent
-                title={info[4].title}
                 text={info[4].text}
                 />
           </div>
-          <div className="col-7 col-md-5 col-lg-3 col-xxl-2 my-3">
-            <img className="img-fluid border rounded" src={'img/nosotrosv.webp'} alt="imagen-oficina-exterior"/>
+          <div className="col-7 col-md-5 col-lg-3 col-xxl-2 my-3 custom-image">
+            <img className="img-fluid border rounded" src={'img/nosotrosv.webp'} 
+            alt="imagen-oficina-exterior"/>
           </div>
         </div>
 
