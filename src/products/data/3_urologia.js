@@ -21,23 +21,36 @@ export const urologia=[
         provider:'Promedon',
         image:'urologia3.jpg',
         hash:'L8SZ2.E2~V?a%LoekDNG%Loej[Rk',
-        description:"Lanzado en 2006, Unitape sirvió para mejorar la calidad de vida de las mujeres que sufren de incontinencia urinaria de esfuerzo, en más de 100.000 cirugías en todo el mundo. Unitape muestra el mismo rendimiento que otros cabestrillos de uretra media bien establecidos, que están o han estado en el mercado1,2,3,4,5,6,7. La experiencia de la cirugía TOT con Unitape T Plus ha mostrado excelentes resultados para la resolución de la IUE femenina con baja tasa de complicaciones y alta tasa de satisfacción a largo plazo."
+        description:`El sistema unitape es la manera mas simple de tratar la incontinencia urinaria de esfuerzo entre las actuales opciones de slinga suburetrales convencionales. 
+                    Abordaje vaginal:.
+                    Incluye un Sling de polipropileno monofilamento macroporoso y dos agujas curvas.
+                    Selección de abordaje:
+                    El sistema incluye dos agujas curvas diseñadas para realizar el abordaje vaginal o suprapúbico.
+                    Sistema de agujas:
+                    La curvatura de las agujas permite una inserción mínimamente invasiva y una colocación segura y precisa del sling.`
     },
     {
         id:34,
-        name:'Kit de Nefrologia',
+        name:'Kit de Nefrostomia',
         provider:'Promedon',
-        image:'urologia4.jpg',
+        image:'urologia4.png',
         hash:'L4Q0XI?Hxao#-;RjM{WB~WIVIVWA',
-        description:"El kit de nefrostomía incluye agujas con puntas de dos tipos: chiba y trocar, catéter de drenaje mono jota, tres dilatadores fasciales, una guía de PTFE, estilete y conector a bolsa de orina"
+        description:`Set para realizar la punción y colocar un drenaje percutáneo.
+                        El kit de nefrostomía incluye agujas con puntas de dos tipos: chiba y trocar, catéter de drenaje mono jota, tres dilatadores fasciales, 
+                        una guía de PTFE, estilete y conector a bolsa de orina
+                        Está compuesto por elementos específicos para acceder a los cálices del riñón, realizados con materiales biocompatibles y de alta calidad. 
+                        Todos los componentes para realizar la punción percutánea y colocación de un catéter de drenaje de manera segura y eficaz.`
     },
     {
         id:35,
         name:'Cateter Ureteral',
         provider:'Promedon',
-        image:'urologia5.jpg',
+        image:'urologia5.png',
         hash:'L2QT4MS~=|^l~D-Vs:EKxabHELNF',
-        description:"El Catéter Ureteral es un elemento con múltiples indicaciones en procedimientos endourológicos"
+        description:`El Catéter Ureteral es un elemento con múltiples indicaciones en procedimientos endourológicos.
+                    · El Catéter Ureteral se utiliza para inyectar contraste e irrigación en procedimientos endourológicos.
+                    · Tiene visibilidad radiopaca.
+                    · De material flexible para facilitar el acceso al riñón.`
     },
     {
         id:36,
