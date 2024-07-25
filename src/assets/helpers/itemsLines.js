@@ -8,14 +8,14 @@ const items=[
     },
     { 
       id: 22,
-      imagePath:'./img/products/oncologia1.webp', 
+      imagePath:'./img/products/oncologia2.webp', 
       hash:'LdQv%k%L~pD*%MWBRjof%LR*M|xa',
       linea: 'Oncología',
       link: 'linea/oncologia'
     },
     { 
       id: 23,
-      imagePath:'./img/products/urologia1.jpg', 
+      imagePath:'./img/products/urologia2.jpg', 
       hash:'LdQv%k%L~pD*%MWBRjof%LR*M|xa',
       linea: 'Urología',
       link: 'linea/urologia'
@@ -29,7 +29,7 @@ const items=[
     },
     { 
       id: 25,
-      imagePath:'./img/products/neurologia1.webp', 
+      imagePath:'./img/products/neurologia3.webp', 
       hash:'LdQv%k%L~pD*%MWBRjof%LR*M|xa',
       linea: 'Neurología', 
       link: 'linea/neurologia'
@@ -43,14 +43,14 @@ const items=[
     },
     { 
       id: 27,
-      imagePath:'./img/products/default.webp', 
+      imagePath:'./img/products/gastro4.webp', 
       hash:'LdQv%k%L~pD*%MWBRjof%LR*M|xa',
       linea: 'Gastroenterología', 
       link: 'linea/gastroenterologia'
     },
     { 
       id: 28,
-      imagePath:'./img/products/default.webp', 
+      imagePath:'./img/products/cirugia4.webp', 
       hash:'LdQv%k%L~pD*%MWBRjof%LR*M|xa',
       linea: 'Cirugia General',
       link: 'linea/cirugia'

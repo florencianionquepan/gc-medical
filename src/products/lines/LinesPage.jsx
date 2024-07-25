@@ -1,11 +1,9 @@
 import { LineComponent } from "./LineComponent"
-import {BreakpointIndicator} from './../../assets/utils/BreakpointIndicator';
 import items from './../../assets/helpers/itemsLines';
 
 export const LinesPage = () => {
   return (
     <>
-      <BreakpointIndicator/>
       <div className="container-md">
         {items.map((i)=>(
           <LineComponent
