@@ -58,3 +58,10 @@
 .img-detail{
     max-width: 90%;
 }
+
+/* Para product detail */
+
+.card-detail{
+    overflow: hidden;
+    max-height: 427px;
+}
