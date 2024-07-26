@@ -1,5 +1,6 @@
 import { NavItem } from "./NavItem";
 import { NavDropdown } from "./NavDropdown";
+import { NavLink } from "react-router-dom";
 
 const menuItems=[
   {id:1,title:'INICIO',link:"/"},
@@ -26,14 +27,14 @@ export const MiNavbar = () => {
     <>
     <nav className="navbar navbar-expand-md py-2 bg-light border-bottom sticky-top'">
       <div className="container-fluid">
-        <a href="/" className="d-flex align-items-center ms-4 mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
+        <NavLink to="/" className="d-flex align-items-center ms-4 mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
           <img src="/img/logo.png" alt="logo"/>
-        </a>
+        </NavLink>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse justify-content-end me-md-5 rozha-one fw-light fs-5" id="navbarNav">
+        <div className="collapse navbar-collapse justify-content-end me-1 me-lg-5 rozha-one fw-light fs-5" id="navbarNav">
           <ul className="navbar-nav">
             {menuItems.map(i=>(
               <li className="nav-item"

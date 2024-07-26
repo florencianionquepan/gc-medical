@@ -1,7 +1,7 @@
 export const heridas=[
     {
         id:11,
-        name:'Equipo De Terapia De Presión Negativa XLR8+',
+        name:'Equipo De Terapia De Presión Negativa',
         provider:'Promedon',
         image:'heridas1.webp',
         hash:'LdQv%k%L~pD*%MWBRjof%LR*M|xa',

@@ -49,6 +49,14 @@ export const Carousel = () => {
               />
             ))}
           </div>
+          <button className="carousel-control-prev d-none d-sm-block" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span className="carousel-control-prev-icon me-5" aria-hidden="true"></span>
+            <span className="visually-hidden">Previous</span>
+          </button>
+          <button className="carousel-control-next d-none d-sm-block" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span className="carousel-control-next-icon ms-4" aria-hidden="true"></span>
+            <span className="visually-hidden">Next</span>
+          </button>
       </div>
     </>
   )
