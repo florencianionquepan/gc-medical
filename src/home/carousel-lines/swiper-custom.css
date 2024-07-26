@@ -2,31 +2,35 @@
     background: #055C8D !important;
 }
 
-.swiper-button-prev .swiper-button-next{
+.swiper-button-prev, .swiper-button-next{
     color: #055C8D !important;
+    @media (max-width: 825px){
+        display: none !important;
+    }
 }
 
-@media(min-width: 1501px){
+ @media(min-width: 1120px){
+    .w-carousel{
+        width: 78%;
+    }
+    .swiper-button-prev{
+        transform: translateX(-12px);
+    }
+    .swiper-button-next{
+        transform: translateX(+12px);
+    }
+} 
+
+/* @media (max-width: 400px){
     .width-carousel{
-        max-width: 80%;
-        text-align: center;
-    }
-
-    .swiper.swiper-initialized.swiper-horizontal.swiper-backface-hidden{
-        align-self: center;
+        max-width: 95% !important;
     }
 }
 
-@media (max-width: 825px) {
-    .width-carousel{
-        max-width: 85%;
-        text-align: center;
-    }
-}
 
 @media (940px < width < 1250px) {
     .width-carousel{
         max-width: 85%;
         text-align: center;
     }
-}
+} */

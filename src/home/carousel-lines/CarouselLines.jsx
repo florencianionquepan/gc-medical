@@ -10,20 +10,21 @@ import { CarouselItemLine } from './CarouselItemLine';
 export const CarouselLines = () => {
 
   return (
-    <div className='row justify-content-center width-carousel mx-auto'>
+    <div className='row w-carousel justify-content-center mx-auto'>
     <Swiper
         modules={[Pagination, Navigation]}
         breakpoints={{
             0:{
-                slidesPerView:1
+                slidesPerView:1,
+                spaceBetween:30
             },
             825:{
                 slidesPerView:2,
-                spaceBetween:10
+                spaceBetween:30
             },
             1250:{
                 slidesPerView:3,
-                spaceBetween:10
+                spaceBetween:30
             }
         }}
         loop={true}

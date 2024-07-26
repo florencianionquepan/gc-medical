@@ -48,3 +48,21 @@
     opacity: 1; 
     transform: translateX(-50%); /* Mover a la posición visible */
 }
+
+@media (max-width:527px) {
+    .card-line{
+        width: 80%;
+    }
+}
+
+@media (527px < width < 826px) {
+    .card-line{
+        width: 70%;
+    }
+}
+
+@media (min-width:825px) {
+    .card-line{
+        width: 98%;
+    }
+}
