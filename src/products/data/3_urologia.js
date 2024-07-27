@@ -17,7 +17,7 @@ export const urologia=[
     },
     {
         id:33,
-        name:'Sistema De Sling Suburetheral UNITAPE VS',
+        name:'Sistema De Sling Suburetheral UNITAPE-VS',
         provider:'Promedon',
         image:'urologia3.jpg',
         hash:'L8SZ2.E2~V?a%LoekDNG%Loej[Rk',

@@ -30,11 +30,11 @@ export const ProductDetail = () => {
 
   return (
     <div className='container-md' style={{minHeight:'60vh'}}>
-        <div className='row mx-5 mt-5 rozha-one border-bottom pb-2'>
+        <div className='row mx-5 mt-5 rozha-one border-bottom pb-2 align-items-center'>
           <div className='col-auto'>
-            <button className='btn btn-gris' 
+            <button className='btn btn-light btn-lg pb-0' 
             onClick={()=>onNavigateBack()}>
-              <i className="bi bi-arrow-return-left"></i>
+              <i class="bi bi-arrow-left fs-4"></i>
             </button>
           </div>
           <div className='col-10'>
@@ -42,7 +42,7 @@ export const ProductDetail = () => {
           </div>
           
         </div>
-        <div className='row mx-5 mb-5'>
+        <div className='row mx-5 mb-5 mt-2'>
           <h4 className='inter'>{product.provider}</h4>
         </div>
         <div className='row m-5 justify-content-center'>
