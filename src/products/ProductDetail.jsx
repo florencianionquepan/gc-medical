@@ -16,7 +16,10 @@ export const ProductDetail = () => {
     const parts = description.split('.');
     const filteredParts = parts.filter(part => part.trim() !== ''); 
     return filteredParts.map((part, index) => (
-      <p key={index}>{part.trim()}.</p> 
+      <p key={index} className='fs-5 inter'>
+        {part.trim()}
+        {part.endsWith(':')?'':'.'}
+      </p> 
     ));
   };
 
@@ -59,7 +62,7 @@ export const ProductDetail = () => {
                   </div>
               </div>
           </div>
-          <div className='col-11 col-md-10 col-lg-8 col-xl-7 p-4'>
+          <div className='col-11 col-md-10 col-lg-8 col-xl-7 px-4'>
 
             {splitDescription(product.description)}
           
