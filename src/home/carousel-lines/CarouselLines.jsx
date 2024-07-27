@@ -35,7 +35,7 @@ export const CarouselLines = () => {
         >
             {items.map((i)=>(
                 <SwiperSlide key={i.id}>
-                        <div className='col mb-5'>
+                        <div className='col mb-5 mt-5'>
                             <CarouselItemLine imagePath={i.imagePath}
                                                 hash={i.hash}
                                                 text={i.linea}
