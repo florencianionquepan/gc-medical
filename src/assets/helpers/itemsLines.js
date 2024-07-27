@@ -52,7 +52,7 @@ const items=[
       id: 28,
       imagePath:'./img/products/cirugia4.webp', 
       hash:'LdQv%k%L~pD*%MWBRjof%LR*M|xa',
-      linea: 'Cirugia General',
+      linea: 'Cirugía General',
       link: 'linea/cirugia'
     },
 ];

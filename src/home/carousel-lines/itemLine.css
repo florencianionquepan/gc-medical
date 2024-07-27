@@ -41,7 +41,8 @@
 
 @media (max-width:565px) {
     .card-title{
-        font-size: 0.8rem;
+        font-size: 1rem;
+        min-width: 120px;
     }
     
 }
@@ -56,14 +57,14 @@
 
 @media (1120px <= width < 2000px) {
     .card-title{
-        font-size: .9rem;
+        font-size: 1rem;
         min-width: 150px;
     }
 }
 
 @media (min-width:2000px){
     .card-title{
-        font-size: 1.3rem;
+        font-size: 1.45rem;
     }
 }
 /* Animacion de cards */
