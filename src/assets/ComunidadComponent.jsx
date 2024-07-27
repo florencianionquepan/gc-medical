@@ -1,8 +1,8 @@
 const iconos=[
-    {id:11, icono:'bi bi-instagram', link:'https://www.instagram.com/gcmedicalbb/?igsh=aTNvd2JkdXJ1N3Aw'},
-    {id:12, icono:'bi bi-facebook', link:'#'},
-    {id:13, icono:'bi bi-linkedin', link:'#'},
-    {id:14, icono:'bi bi-whatsapp', link:'https://wa.me/+542914372900'}
+    {id:14, icono:'bi bi-whatsapp', link:'https://wa.me/+542914372900'},
+    {id:11, icono:'bi bi-instagram', link:'https://www.instagram.com/gcmedicalbb'},
+    {id:12, icono:'bi bi-instagram', link:'https://www.instagram.com/gcmedicaldiabetes/'},
+    {id:13, icono:'bi bi-linkedin', link:'https://www.linkedin.com/in/gc-medical-18b7b8306/'}
   ];
 
 export const ComunidadComponent = () => {

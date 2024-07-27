@@ -1,9 +1,8 @@
 @import url(./fonts.css);
 
-/* este es el azul mas claro
-#4C80C5 
-este el gris: #9DB9DF
-este el naranja: #EA7200*/
+/* azul mas claro #4C80C5 
+gris: #9DB9DF
+naranja: #EA7200*/
 
 /* clases de links */
 /* este es el azul que queda para el menu active */
@@ -19,6 +18,12 @@ este el naranja: #EA7200*/
 .link-custom:active{
   color: #1966CC !important;
   background-color: transparent !important;
+}
+
+@media (max-width:500px) {
+  .link-custom{
+    font-size: 0.9rem !important;
+  }  
 }
 
 /* clases para fondos */

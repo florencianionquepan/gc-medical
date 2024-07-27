@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { ComunidadComponent } from "./ComunidadComponent";
 
 const generalItems=[
@@ -29,16 +30,18 @@ export const MiFooter = () => {
     <div className="container-fluid">
         <footer className="row px-2 pt-5 mt-5 bg-light border-top align-items-center justify-content-center justify-content-md-between">
             <div className="col-12 mb-3 col-md-5 col-lg-3">
-                <a href="/" className="text-dark text-decoration-none d-flex justify-content-center justify-content-md-start">
+                <Link to="/" className="text-dark text-decoration-none d-flex justify-content-center justify-content-md-start">
                     <img src="/img/logo.png" alt="logo"/>
-                </a>
+                </Link>
             </div>
 
             <div className="col-4 mb-3 col-md-5 col-lg-2">
                 <ul className="nav flex-column">
                     {generalItems.map(subItem => (
                         <li key={subItem.id} className="nav-item mb-2 ms-2">
-                            <a href={subItem.link} className="nav-link p-0 text-dark link-custom">{subItem.title}</a>
+                            <Link to={subItem.link} className="nav-link p-0 text-dark link-custom fs-5">
+                            {subItem.title}
+                            </Link>
                         </li>
                     ))}
                 </ul> 
@@ -47,8 +50,10 @@ export const MiFooter = () => {
             <div className="col-4 mb-3 col-md-3 col-lg-2">
                 <ul className="nav flex-column">
                     {lineas1.map(subItem => (
-                        <li key={subItem.id} className="nav-item mb-2 ms-2">
-                            <a href={subItem.link} className="nav-link p-0 text-dark link-custom">{subItem.title}</a>
+                        <li key={subItem.id} className="nav-item mb-2 ms-2 fs-5">
+                            <Link to={subItem.link} className="nav-link p-0 text-dark link-custom fs-5">
+                                {subItem.title}
+                            </Link>
                         </li>
                     ))}
                 </ul>  
@@ -58,14 +63,16 @@ export const MiFooter = () => {
                 <ul className="nav flex-column">
                     {lineas2.map(subItem => (
                         <li key={subItem.id} className="nav-item mb-2 ms-2">
-                            <a href={subItem.link} className="nav-link p-0 text-dark link-custom">{subItem.title}</a>
+                            <Link to={subItem.link} className="nav-link p-0 text-dark link-custom fs-5">
+                            {subItem.title}
+                            </Link>
                         </li>
                     ))}
                 </ul>  
             </div>
 
-            <div className="col mb-3 col-md-4 col-lg-2">
-            <ComunidadComponent/>
+            <div className="col mb-3 col-md-4 col-lg-2 fs-5">
+                <ComunidadComponent/>
             </div>
         </footer>
     </div>
