@@ -1,6 +1,5 @@
 import { AboutComponent } from "./AboutComponent"
 import { ValuesComponent } from "./ValuesComponent";
-import {BreakpointIndicator} from "./../assets/utils/BreakpointIndicator";
 import {info} from "./data/info";
 import './about.css';
 

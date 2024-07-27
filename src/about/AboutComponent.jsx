@@ -6,7 +6,7 @@ export const AboutComponent = ({title,text, adClass}) => {
         const lines = text.split(/\./);
         const filteredLines = lines.filter(line => line.trim() !== '');
         const paragraphs = filteredLines.map((line, index) => (
-          <p key={index} className="mb-0">{line.trim()}.</p>
+          <p key={index} className="mb-0 fs-5">{line.trim()}.</p>
         ));
         return paragraphs;
       };
