@@ -6,7 +6,7 @@ export const usePagination = (linea, filteredProducts,initialCards = 6) => {
 
   useEffect(() => {
     setCurrentPage(1);
-  }, [linea])
+  }, [linea, filteredProducts])
   // const [cardsPerPage, setCardsPerPage]= useState(6);
 
   if(!Array.isArray(filteredProducts) || filteredProducts.length===0){
@@ -18,7 +18,7 @@ export const usePagination = (linea, filteredProducts,initialCards = 6) => {
   const startIndex= lastIndex-cardsPerPage;
 
   const paginatedProducts = filteredProducts.slice(startIndex, lastIndex);
-  console.log(cardsPerPage);
+  
   return {cardsPerPage, currentPage, setCurrentPage, paginatedProducts};
 
 

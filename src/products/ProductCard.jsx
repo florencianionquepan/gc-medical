@@ -50,7 +50,7 @@ export const ProductCard = ({product}) => {
         <Link to={`/productos/${product.id}`} 
               className="btn btn-light border border-3 border-bottom-0 text-center py-3 fs-5 link-container inter d-flex align-items-center justify-content-center pt-3">
               <div className="mb-1 me-1"> Ver más </div>
-              <div className="mb-0"> <i class="bi bi-arrow-right fs-4"></i> </div>
+              <div className="mb-0"> <i className="bi bi-arrow-right fs-4"></i> </div>
         </Link>
         <div className="bg-celeste text-white py-2" style={{zIndex:10}}>
           <h6 className="mb-0 mx-2 inter text-uppercase"> {product.provider} </h6>

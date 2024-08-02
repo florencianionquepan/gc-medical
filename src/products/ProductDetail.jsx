@@ -37,7 +37,7 @@ export const ProductDetail = () => {
           <div className='col-auto'>
             <button className='btn btn-light btn-lg pb-0' 
             onClick={()=>onNavigateBack()}>
-              <i class="bi bi-arrow-left fs-4"></i>
+              <i className="bi bi-arrow-left fs-4"></i>
             </button>
           </div>
           <div className='col-10'>
