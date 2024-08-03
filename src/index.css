@@ -15,7 +15,7 @@ naranja: #EA7200*/
   background-color: transparent !important;
 }
 
-.link-custom:active{
+.link-custom:active, .link-custom.active{
   color: #1966CC !important;
   background-color: transparent !important;
 }
