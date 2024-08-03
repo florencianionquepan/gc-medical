@@ -58,6 +58,7 @@ export const ProductDetail = () => {
                       path={imagePath}
                       clase={'rounded-circle border border-gris-12 d-block w-100 img-responsive'}
                       imageAlt={product.name}
+                      imageVisible={true}
                     />
                   </div>
               </div>
