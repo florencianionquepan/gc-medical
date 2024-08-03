@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
 import { ImageComponent } from "../assets/utils/ImageComponent";
+import {formatLine} from "./helpers/formatLine";
 
 export const ProductCard = ({product}) => {
   
   const imagePath = '/img/products/'.concat(product.image);
+  const linea= product.line? formatLine(product.line) : '';
 
   const adjustText = (text, maxLength) => {
     const words = text.split(' ');
@@ -53,7 +55,9 @@ export const ProductCard = ({product}) => {
               <div className="mb-0"> <i className="bi bi-arrow-right fs-4"></i> </div>
         </Link>
         <div className="bg-celeste text-white py-2" style={{zIndex:10}}>
-          <h6 className="mb-0 mx-2 inter text-uppercase"> {product.provider} </h6>
+          <h6 className="mb-0 mx-2 inter"> 
+            <span className="text-uppercase"> {product.provider} </span> 
+            <span className="text-sm text-smallcase"> {linea} </span></h6>
         </div>
       </div>
       
