@@ -16,6 +16,7 @@ export const CarouselItemLine = ({imagePath,hash,text,linePath}) => {
                         path={imagePath}
                         clase={'card-img-top rounded-circle border border-gris-12'}
                         imageAlt={text}
+                        imageVisible={true}
                         />
                 </div>
             </div>

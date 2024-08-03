@@ -15,7 +15,7 @@ const items=[
     },
     { 
       id: 23,
-      imagePath:'./img/products/urologia2.jpg', 
+      imagePath:'./img/products/urologia2.webp', 
       hash:'LdQv%k%L~pD*%MWBRjof%LR*M|xa',
       linea: 'Urología',
       link: 'linea/urologia'

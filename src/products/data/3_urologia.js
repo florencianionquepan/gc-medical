@@ -33,7 +33,7 @@ export const urologia=[
         id:34,
         name:'Kit de Nefrostomia',
         provider:'Promedon',
-        image:'urologia4.png',
+        image:'urologia4.webp',
         hash:'L4Q0XI?Hxao#-;RjM{WB~WIVIVWA',
         description:`Set para realizar la punción y colocar un drenaje percutáneo.
                         El kit de nefrostomía incluye agujas con puntas de dos tipos: chiba y trocar, catéter de drenaje mono jota, tres dilatadores fasciales, 
@@ -45,7 +45,7 @@ export const urologia=[
         id:35,
         name:'Cateter Ureteral',
         provider:'Promedon',
-        image:'urologia5.png',
+        image:'urologia5.webp',
         hash:'L2QT4MS~=|^l~D-Vs:EKxabHELNF',
         description:`El Catéter Ureteral es un elemento con múltiples indicaciones en procedimientos endourológicos.
                     · El Catéter Ureteral se utiliza para inyectar contraste e irrigación en procedimientos endourológicos.
