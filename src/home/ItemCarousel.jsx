@@ -8,7 +8,9 @@ export const ItemCarousel = ({isActive, imagePath, imageAlt, hash }) => {
                       claseHash={"d-block w-100 img-hash-supplier"}
                       path={imagePath} 
                       clase={"d-block w-100"}
-                      imageAlt={imageAlt}/> 
+                      imageAlt={imageAlt}
+                      imageVisible={true}
+                      /> 
     </div>
   )
 }
