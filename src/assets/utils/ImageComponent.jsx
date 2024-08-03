@@ -1,17 +1,19 @@
 import { useEffect, useState } from "react"
 import {BlurhashCanvas} from "react-blurhash";
 
-export const ImageComponent = ({hash, claseHash, path, clase, imageAlt}) => {
+export const ImageComponent = ({hash, claseHash, path, clase, imageAlt, imageVisible}) => {
 
   const [imageLoaded, setImageLoaded] = useState(false);
 
   useEffect(() => {
-    const img= new Image()
-    img.onload = () =>{
-      setImageLoaded(true);
+    if(imageVisible){
+      const img= new Image()
+      img.onload = () =>{
+        setImageLoaded(true);
+      }
+      img.src= path
     }
-    img.src= path
-  }, [path])
+  }, [path, imageVisible])
 
 
   return (

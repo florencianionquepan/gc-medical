@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { ImageComponent } from "../assets/utils/ImageComponent";
 import {formatLine} from "./helpers/formatLine";
 
-export const ProductCard = ({product}) => {
+export const ProductCard = ({product, imageVisible=false}) => {
   
   const imagePath = '/img/products/'.concat(product.image);
   const linea= product.line? formatLine(product.line) : '';
@@ -40,6 +40,7 @@ export const ProductCard = ({product}) => {
                   path={imagePath}
                   clase={'rounded-circle border border-gris-12 d-block w-100'}
                   imageAlt={product.name}
+                  imageVisible={imageVisible}
                 />
               </div>
           </div>

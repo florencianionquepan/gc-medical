@@ -37,7 +37,7 @@ export const ProductLinePage = () => {
         <div className='row m-5 justify-content-center justify-content-md-start'>
             { paginatedProducts.map((pro)=>(
                 <div key={pro.id} className="col-12 col-sm-10 col-md-6 col-lg-4  mb-3">
-                    <ProductCard product={pro}/>
+                    <ProductCard product={pro} imageVisible={true}/>
                 </div>
             ))}
         </div>
