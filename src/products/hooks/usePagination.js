@@ -1,13 +1,25 @@
 import { useEffect, useState } from "react";
 
-export const usePagination = (linea, filteredProducts,initialCards = 6) => {
-     //pagination
+export const usePagination = (linea, filteredProducts) => {
+  //pagination
   const [currentPage, setCurrentPage] = useState(1);
+  const [initialCards, setInitialCards] = useState(6);
 
   useEffect(() => {
     setCurrentPage(1);
   }, [linea, filteredProducts])
-  // const [cardsPerPage, setCardsPerPage]= useState(6);
+  
+  useEffect(()=>{
+    
+    const handleResize = () =>{
+      setInitialCards(getCardsPerPage());
+    }
+    
+    window.addEventListener('resize', handleResize);
+    return () =>{
+      window.removeEventListener('resize',handleResize);
+    };
+  },[])
 
   if(!Array.isArray(filteredProducts) || filteredProducts.length===0){
     return { cardsPerPage:2, currentPage, setCurrentPage, paginatedProducts: [] };
@@ -23,3 +35,15 @@ export const usePagination = (linea, filteredProducts,initialCards = 6) => {
 
 
 }
+
+const getCardsPerPage = () => {
+  if (window.innerWidth >= 1200) {
+    return 6; 
+  } else if (window.innerWidth >= 992) {
+    return 4; 
+  } else if (window.innerWidth >= 768) {
+    return 3; 
+  } else {
+    return 2;
+  }
+};
