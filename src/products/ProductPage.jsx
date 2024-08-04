@@ -7,6 +7,7 @@ import { SearchComponent } from '../assets/utils/SearchComponent';
 import { PaginationComponent } from '../assets/utils/PaginationComponent';
 import { usePagination } from './hooks/usePagination';
 import { useSearch } from './hooks/useSearch';
+import {BreakpointIndicator} from './../assets/utils/BreakpointIndicator';
 
 export const ProductPage = () => {
 
@@ -25,11 +26,12 @@ export const ProductPage = () => {
    
 
   return (
-    <div className='container-md'>
+    <div className='container-lg'>
+      <BreakpointIndicator/>
         <SearchComponent onSearch={handleSearch} />
-        <div className='row m-5'>
+        <div className='row m-5 justify-content-center justify-content-lg-start'>
             { paginatedProducts.map((pro)=>(
-                <div key={pro.id} className="col-6 col-md-4 mb-3">
+                <div key={pro.id} className="col-10 col-md-8 col-lg-6 col-xl-4 mb-3">
                     <ProductCard product={pro} imageVisible={true}/>
                 </div>
             ))}

@@ -54,6 +54,11 @@
     }
 }
 
+.hash-nosotros{
+    height: 250px !important;
+    width: 618px;
+}
+
 /* Para seccion productos */
 .img-hash-supplier{
     max-height: 303px;
