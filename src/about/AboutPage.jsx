@@ -29,12 +29,12 @@ export const AboutPage = () => {
         {/* Valores */}
         <div className="row justify-content-center mt-3">
           <div className="col-10 col-md-8 ms-5 mt-3">
-            <h5 className="rozha-one">
+            <h5 className="rozha-one fs-4">
               {info[2].title}
             </h5>
           </div>
         </div>
-        <div className="row justify-content-center mb-3 mx-5">
+        <div className="row justify-content-center mb-3 mx-5 inter">
             {info[2].texts.map((val)=>(
               <ValuesComponent key={val.id}
                                 title={val.title}
@@ -68,7 +68,7 @@ export const AboutPage = () => {
         {/* Habilitaciones */}
         <div className="row justify-content-center mt-3 mx-5">
           <div className='col-10 col-md-8'>
-            <h5 className="rozha-one">Habilitaciones</h5>
+            <h5 className="rozha-one fs-4">Habilitaciones</h5>
           </div>
         </div>
         <div className="row justify-content-center mb-3 mx-5">

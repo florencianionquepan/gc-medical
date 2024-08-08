@@ -6,7 +6,7 @@ export const AboutComponent = ({title,text, adClass}) => {
         const lines = text.split(/\./);
         const filteredLines = lines.filter(line => line.trim() !== '');
         const paragraphs = filteredLines.map((line, index) => (
-          <p key={index} className="mb-0 fs-5">{line.trim()}.</p>
+          <p key={index} className="mb-0 fs-5 inter">{line.trim()}.</p>
         ));
         return paragraphs;
       };
@@ -14,8 +14,8 @@ export const AboutComponent = ({title,text, adClass}) => {
   return (
     <>
         <div className="rounded">
+            <h5 className="rozha-one fs-4"> {title} </h5>
             <div className={`border border-gris border-5 bg-body rounded p-3 ${adClass}`}>
-                <h5 className="rozha-one"> {title} </h5>
                  {splitText(text)} 
             </div>
         </div>
