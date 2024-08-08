@@ -12,12 +12,12 @@ export const ItemEmail = () => {
     <>
         <div className="border rounded border-gris border-5 position-relative pt-5 pb-2 inter">
             <BigIcon iconClass="bi bi-envelope-arrow-up mt-0" link="mailto:info@gcmedical.com.ar"/>
-            <p className="px-4 pt-3 mt-5">
+            <p className="px-4 pt-3 mt-5 fs-5">
                 info@gcmedical.com.ar
             </p>
-            <p className="px-4"> Podés encontrarnos en otras redes sociales: </p>
+            <p className="px-4 fs-5"> Podés encontrarnos en otras redes sociales: </p>
             <div className="d-flex justify-content-center pb-3">
-              <ul className="list-group pb-3 text-start ms-5 fs-5">
+              <ul className="list-group pb-3 text-start ms-md-5 fs-5">
                 {iconos.map(ic=>(
                             <li key={ic.id}
                                 className="list-group-item border border-0 pb-0 ms-2">
@@ -26,7 +26,7 @@ export const ItemEmail = () => {
                                       <i className={ic.icono}></i>
                                   </div>
                                 </a>
-                                <span className="ms-2 rozha-one-lig">
+                                <span className="ms-1 ms-md-2 rozha-one-lig">
                                   {ic.text}
                                 </span> 
                             </li>
