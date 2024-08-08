@@ -11,7 +11,11 @@ export const NavDropdown = ({item}) => {
         <ul className="dropdown-menu">
             {item.subItems.map(subItem => (
                 <li key={subItem.id}>
-                    <NavLink to={subItem.link} className="nav-link link-custom ps-2 text-dark" style={{width: 185}}>{subItem.title}</NavLink>
+                    <NavLink to={subItem.link} end
+                    className="nav-link link-custom ps-2 text-dark" 
+                    style={{width: 220, fontSize:'larger'}}>
+                        {subItem.title}
+                    </NavLink>
                 </li>
             ))}
         </ul>                    
