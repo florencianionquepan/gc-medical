@@ -22,10 +22,10 @@ export const ItemLocation = () => {
   return (
     <>
         
-        <div className="border rounded border-gris border-5 position-relative pt-5">
-            <BigIcon iconClass="bi bi-geo-alt-fill" link="https://maps.app.goo.gl/BLvJnbvKs3cv7ziA8"/>
+        <div className="border rounded border-gris border-5 position-relative pt-5 inter">
+            <BigIcon iconClass="bi bi-geo-alt-fill mt-0" link="https://maps.app.goo.gl/BLvJnbvKs3cv7ziA8"/>
             <p className="px-4 pt-3 mt-5">
-                Podés encontrarnos en Belgrano 532 de Lunes a viernes de 8.30 a 16.00hs en Bahía Blanca
+                Podés encontrarnos en Belgrano 532 de lunes a viernes de 8.30 a 16.00 hs en Bahía Blanca.
             </p>
             <p className="px-4">
                 Además, bridamos nuestros servicios a otras localidades:
