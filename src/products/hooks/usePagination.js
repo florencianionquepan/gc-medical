@@ -37,13 +37,12 @@ export const usePagination = (linea, filteredProducts) => {
 }
 
 const getCardsPerPage = () => {
-  if (window.innerWidth >= 1200) {
-    return 6; 
-  } else if (window.innerWidth >= 992) {
+  console.log('Window innerWidth:', window.innerWidth);
+  if (window.matchMedia('(max-width: 768px)').matches) {
+    return 2; 
+  } else if (window.matchMedia('(max-width: 1200px)').matches) {
     return 4; 
-  } else if (window.innerWidth >= 768) {
-    return 3; 
   } else {
-    return 2;
+    return 6;
   }
 };
