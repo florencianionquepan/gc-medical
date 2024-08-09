@@ -1,6 +1,7 @@
 import { NavItem } from "./NavItem";
 import { NavDropdown } from "./NavDropdown";
 import { NavLink } from "react-router-dom";
+import { useEffect } from "react";
 
 const menuItems=[
   {id:1,title:'INICIO',link:"/"},
@@ -29,8 +30,15 @@ export const MiNavbar = () => {
     }
   }
 
-  const links=document.querySelectorAll('.click-close');
-  links.forEach(l=>l.onclick=closeMenu);
+  useEffect(()=>{
+    const links=document.querySelectorAll('.click-close');
+    links.forEach(l=>l.onclick=closeMenu);
+
+    return () => {
+      links.forEach(l => l.onclick = null);
+    };
+  },[])
+
 
   return (
     <>
