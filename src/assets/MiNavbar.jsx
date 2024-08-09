@@ -23,6 +23,15 @@ const menuItems=[
 
 export const MiNavbar = () => {
 
+  const closeMenu=()=>{
+    if(window.innerWidth <= 768){
+      document.querySelector('.navbar-collapse').classList.remove('show');
+    }
+  }
+
+  const links=document.querySelectorAll('.click-close');
+  links.forEach(l=>l.onclick=closeMenu);
+
   return (
     <>
     <nav className="navbar navbar-expand-md py-2 bg-light border-bottom sticky-top'">
