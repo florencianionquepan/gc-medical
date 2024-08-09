@@ -29,9 +29,9 @@ export const ProductPage = () => {
     <div className='container-lg'>
       <BreakpointIndicator/>
         <SearchComponent onSearch={handleSearch} />
-        <div className='row m-5 justify-content-center justify-content-lg-start'>
+        <div className='row m-3 m-sm-5 justify-content-center justify-content-lg-start'>
             { paginatedProducts.map((pro)=>(
-                <div key={pro.id} className="col-10 col-md-8 col-lg-6 col-xl-4 mb-3">
+                <div key={pro.id} className="col-12 col-sm-10 col-md-8 col-lg-6 col-xl-4 mb-3">
                     <ProductCard product={pro} imageVisible={true}/>
                 </div>
             ))}

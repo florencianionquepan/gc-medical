@@ -31,6 +31,12 @@
     white-space: nowrap;
 }
 
+@media (max-width:400px) {
+    .title-product-custom{
+        left: 43%;
+    }
+}
+
 .link-container{
     position: absolute;
     bottom: 0%;
@@ -64,4 +70,16 @@
 .card-detail{
     overflow: hidden;
     max-height: 427px;
+}
+
+@media (1200px < width < 1400px) {
+    .card-detail{
+        max-height: 350px;
+    }
+}
+
+@media (986px < width < 1200px) {
+    .card-detail{
+        max-height: 600px;
+    }
 }

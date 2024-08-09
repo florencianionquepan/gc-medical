@@ -3,6 +3,7 @@ import { Navigate, useNavigate, useParams } from 'react-router-dom';
 import { getProductById } from './helpers/getProductById';
 import { TitleProductComponent } from './TitleProductComponent';
 import { ImageComponent } from '../assets/utils/ImageComponent';
+import { BreakpointIndicator } from '../assets/utils/BreakpointIndicator';
 
 export const ProductDetail = () => {
 
@@ -32,9 +33,11 @@ export const ProductDetail = () => {
   }
 
   return (
+    
     <div className='container-md' style={{minHeight:'60vh'}}>
-        <div className='row mx-5 mt-5 rozha-one border-bottom pb-2 align-items-center'>
-          <div className='col-auto'>
+      <BreakpointIndicator/>
+        <div className='row mx-2 mx-sm-5 mt-5 rozha-one border-bottom pb-2 align-items-center'>
+          <div className='col-2 col-sm-auto'>
             <button className='btn btn-light btn-lg pb-0' 
             onClick={()=>onNavigateBack()}>
               <i className="bi bi-arrow-left fs-4"></i>
@@ -48,8 +51,8 @@ export const ProductDetail = () => {
         <div className='row mx-5 mb-5 mt-2'>
           <h4 className='inter'>{product.provider}</h4>
         </div>
-        <div className='row m-5 justify-content-center'>
-          <div className='col-10 col-md-10 col-lg-6 col-xl-5 card-detail border rounded'>
+        <div className='row mx-2 m-sm-5 justify-content-center'>
+          <div className='col-10 col-md-10 col-lg-8 col-xl-5 card-detail border rounded my-xl-2'>
               <div className='box-custom-product mx-4'>
                   <div className='rounded-circle border border-5 border-white text-center'>
                     <ImageComponent
@@ -63,7 +66,7 @@ export const ProductDetail = () => {
                   </div>
               </div>
           </div>
-          <div className='col-11 col-md-10 col-lg-8 col-xl-7 px-4'>
+          <div className='col-12 col-xl-7 px-lg-4 py-4 py-xl-0'>
 
             {splitDescription(product.description)}
           
