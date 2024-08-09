@@ -1,4 +1,4 @@
-import { useMemo } from 'react'
+import { useEffect, useMemo } from 'react'
 import { Navigate, useNavigate, useParams } from 'react-router-dom';
 import { getProductById } from './helpers/getProductById';
 import { TitleProductComponent } from './TitleProductComponent';
@@ -11,6 +11,10 @@ export const ProductDetail = () => {
   const product = useMemo( ()=> getProductById(id), [id]);
 
   const imagePath = product? '/img/products/'.concat(product.image): '';
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const splitDescription = (description) => {
     const parts = description.split('.');
