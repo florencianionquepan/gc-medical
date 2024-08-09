@@ -1,6 +1,8 @@
 import { NavItem } from "./NavItem";
 import { NavDropdown } from "./NavDropdown";
 import { NavLink } from "react-router-dom";
+import { useEffect, useRef } from "react";
+import { Collapse } from "bootstrap";
 
 const menuItems=[
   {id:1,title:'INICIO',link:"/"},
@@ -22,6 +24,24 @@ const menuItems=[
 
 
 export const MiNavbar = () => {
+  const navRef = useRef(null);
+
+  const closeMenu = () => {
+    if (window.innerWidth <= 768 && navRef.current) {
+      console.log("entro");
+      const collapse = new Collapse(navRef.current);
+      collapse.hide();
+    }
+  };
+
+  useEffect(() => {
+    const links = document.querySelectorAll('.navbar-nav .nav-link');
+    links.forEach(link => link.addEventListener('click', closeMenu));
+    
+    return () => {
+      links.forEach(link => link.removeEventListener('click', closeMenu));
+    };
+  }, []);
 
   return (
     <>
@@ -34,7 +54,8 @@ export const MiNavbar = () => {
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
-        <div className="collapse navbar-collapse justify-content-end me-1 me-lg-5 rozha-one fw-light fs-5" id="navbarNav">
+        <div className="collapse navbar-collapse justify-content-end me-1 me-lg-5 rozha-one fw-light fs-5" 
+              id="navbarNav" ref={navRef}>
           <ul className="navbar-nav">
             {menuItems.map(i=>(
               <li className="nav-item"

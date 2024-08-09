@@ -10,13 +10,17 @@ naranja: #EA7200*/
   color: #055C8D !important;
 }
 
+.nav-link:hover{
+  color: #055C8D !important;
+}
+
 .link-custom:hover{
-  color: #1966CC !important;
+  color: #055C8D !important;
   background-color: transparent !important;
 }
 
 .link-custom:active, .link-custom.active{
-  color: #1966CC !important;
+  color: #055C8D !important;
   background-color: transparent !important;
 }
 
