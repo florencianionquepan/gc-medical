@@ -1,9 +1,15 @@
+import { useEffect } from 'react';
 import { ItemLocation } from './ItemLocation'
 import { ItemPhone } from './ItemPhone'
 import { ItemEmail } from './ItemEmail'
 import './contact.css';
 
 export const ContactPage = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <div className='container-md my-5 text-center mx-auto'>

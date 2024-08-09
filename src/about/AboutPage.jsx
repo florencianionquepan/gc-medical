@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { AboutComponent } from "./AboutComponent"
 import { ValuesComponent } from "./ValuesComponent";
 import {info} from "./data/info";
@@ -5,6 +6,10 @@ import './about.css';
 
 
 export const AboutPage = () => {
+
+  useEffect(() => {
+    window.scrollTo(0, 0); 
+  }, []);
 
   return (
     <div className='container-xl'>

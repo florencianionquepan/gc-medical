@@ -13,6 +13,7 @@ export const ProductPage = () => {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
+      window.scrollTo(0, 0);
       const products = getProducts();
       setProducts(products);
       //console.log(products);
