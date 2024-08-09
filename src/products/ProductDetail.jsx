@@ -3,7 +3,6 @@ import { Navigate, useNavigate, useParams } from 'react-router-dom';
 import { getProductById } from './helpers/getProductById';
 import { TitleProductComponent } from './TitleProductComponent';
 import { ImageComponent } from '../assets/utils/ImageComponent';
-import { BreakpointIndicator } from '../assets/utils/BreakpointIndicator';
 
 export const ProductDetail = () => {
 
@@ -35,7 +34,6 @@ export const ProductDetail = () => {
   return (
     
     <div className='container-md' style={{minHeight:'60vh'}}>
-      <BreakpointIndicator/>
         <div className='row mx-2 mx-sm-5 mt-5 rozha-one border-bottom pb-2 align-items-center'>
           <div className='col-2 col-sm-auto'>
             <button className='btn btn-light btn-lg pb-0' 
