@@ -85,6 +85,18 @@
     transform: translateX(-50%); 
 }
 
+/* En movil dejo el titulo fijo*/
+@media (max-width: 768px) {
+    .card-line{
+        transform: scale(1.05);
+        box-shadow: 0px 0px 5px 1px var(--mi-sombra);
+    }
+    .title-line-custom{
+        opacity: 1;
+        transform: translateX(-47%);
+    }
+}
+
 /* El ancho de cada card por separado */
 
 @media (max-width:527px) {
