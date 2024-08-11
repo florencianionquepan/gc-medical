@@ -38,11 +38,20 @@ export const gastroenterologia=[
     },
     {
         id:74,
-        name:'Asa De Polipectomía Fría LesionHunter?',
+        name:'Asa De Polipectomía Fría LesionHunter',
         provider:'Promedon',
         image:'gastro4.webp',
         hash:'LCR{+1of?aR*?at7t7Rj~ot7axWB',
-        description:'Ver si falta info o no va'
+        description:`El asa fría LesionHunter™ cuenta con un fino alambre de Nitinol giratorio que mantiene la forma ovalada corte tras corte. Con esta asa fría, se obtiene un corte limpio y preciso.
+                    Reducción del tejido que se escapa:.
+                    El alambre fino puede reducir el riesgo de generar una muestra que se escape, lo
+                    que facilita la localización del tejido al final de la resección.
+                    Alambre de Nitinol fino:.
+                    Este material de alambre proporciona durabilidad en la forma con un diámetro de 0.18mm para un
+                    corte aún más limpio.
+                    Camisa interna en espiral:.
+                    El catéter metálico en espiral crea una mayor estabilidad para la acción de corte tipo guillotina del
+                    alambre.`
     },
     {
         id:75,

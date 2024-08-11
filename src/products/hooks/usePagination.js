@@ -5,6 +5,10 @@ export const usePagination = (linea, filteredProducts) => {
   const [currentPage, setCurrentPage] = useState(1);
   const [initialCards, setInitialCards] = useState(6);
 
+  useEffect(()=>{
+    setCurrentPage(1);
+  },[linea, filteredProducts])
+
 
   if(!Array.isArray(filteredProducts) || filteredProducts.length===0){
     return { cardsPerPage:2, currentPage, setCurrentPage, paginatedProducts: [] };
